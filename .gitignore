@@ -1,7 +1,5 @@
 log/*
 temp/*
-libs/*
-!libs/clevispace
 
 .DS_Store
 !.gitignore
