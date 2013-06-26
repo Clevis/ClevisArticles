@@ -21,7 +21,7 @@
 	"require": {
 		"php": ">= 5.3.7",
 		"nette/nette": "@dev",
-		"dg/dibi": "dev-master",
+		"dg/dibi": "2.1.*",
 		"petrp/orm": "v0.4",
 		"clevis/migration": "*"
 	},
