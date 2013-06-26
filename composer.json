@@ -38,10 +38,18 @@
 	{
 		"post-install-cmd": [
 			"rm -rf ./libs/petrp/orm/php52",
+			"rm -rf ./libs/petrp/access/tests",
+			"rm -rf ./libs/petrp/httpphpunit/libs",
+			"rm -rf ./libs/petrp/httpphpunit/tests",
+			"rm -rf ./libs/phpunit/php-code-coverage/Tests",
 			"mv ./libs/clevis/migration/migrations/* ./migrations"
 		],
 		"post-update-cmd": [
 			"rm -rf ./libs/petrp/orm/php52",
+			"rm -rf ./libs/petrp/access/tests",
+			"rm -rf ./libs/petrp/httpphpunit/libs",
+			"rm -rf ./libs/petrp/httpphpunit/tests",
+			"rm -rf ./libs/phpunit/php-code-coverage/Tests",
 			"mv ./libs/clevis/migration/migrations/* ./migrations"
 		]
 	},
