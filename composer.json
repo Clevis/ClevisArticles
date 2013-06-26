@@ -37,10 +37,12 @@
 	"scripts":
 	{
 		"post-install-cmd": [
-			"rm -rf ./libs/petrp/orm/php52"
+			"rm -rf ./libs/petrp/orm/php52",
+			"mv ./libs/clevis/migration/migrations/* ./migrations"
 		],
 		"post-update-cmd": [
-			"rm -rf ./libs/petrp/orm/php52"
+			"rm -rf ./libs/petrp/orm/php52",
+			"mv ./libs/clevis/migration/migrations/* ./migrations"
 		]
 	},
 
