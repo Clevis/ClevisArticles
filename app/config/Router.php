@@ -17,9 +17,9 @@ class Router extends RouteList
 	{
 		parent::__construct();
 
-		$this[] = new Front\Router();
-
 		$this[] = new Admin\Router();
+
+		$this[] = new Front\Router();
 	}
 
 }

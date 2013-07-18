@@ -15,9 +15,12 @@ abstract class BasePresenter extends App\BasePresenter
 	{
 		parent::beforeRender();
 
-		if (!$this->user->isLoggedIn())
+		if ($this->name !== 'Admin:Sign')
 		{
-            $this->redirect(':Sign:in', array('backlink' => $this->storeRequest()));
+			if (!$this->user->isLoggedIn())
+			{
+				$this->redirect('Sign:in', array('backlink' => $this->storeRequest()));
+			}
 		}
 	}
 

@@ -13,8 +13,8 @@ class Router extends RouteList
 	{
 		parent::__construct($module);
 
-		$this[] = new Route($prefix, 'Home:default');
-		$this[] = new Route('<presenter>/<action>[/<id>]', 'Homepage:default');
+		$this[] = new Route($prefix, 'Homepage:default');
+		$this[] = new Route($prefix . '/<presenter>/<action>[/<id>]', 'Homepage:default');
 	}
 
 }
