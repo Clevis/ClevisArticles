@@ -1,3 +1,29 @@
 {block #content}
 
+<h2>{$heading}</h2>
+
+<hr />
+
+	{form editArticle}
+		{? $form->render('errors'); }
+		<fieldset>
+			{input id}
+
+			<label>{label title /}</label>
+			{input title, class => 'input-xlarge'}
+
+			<label>{label intro /}</label>
+			{input intro, class => 'input-xxlarge', rows => 3}
+
+			<label>{label text /}</label>
+			{input text, class => 'input-xxlarge', rows => 10}
+
+			<label>{label visible /}</label>
+			{input visible}
+		</fieldset>
+
+		{input save, class => 'btn btn-primary btn-large'}
+
+	{/form}
+
 {/block}
