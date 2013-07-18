@@ -2,6 +2,7 @@
 
 namespace App\Front;
 
+use	Nette\Utils\Strings;
 
 /**
  * Articles presenter
@@ -20,9 +21,27 @@ final class ArticlesPresenter extends BasePresenter
 	/**
 	 * View particular article
 	 */
-	public function renderView($id)
+	public function renderView($articleId, $articleTitle)
 	{
-		$this->template->article = $this->orm->articles->getById($id);
+		/** @var Article $article */
+		$article = $this->orm->articles->getById($articleId);
+		if (!$article)
+		{
+			$this->error();
+		}
+
+		// redirect to correct article title
+		$webName = Strings::webalize($article->title);
+		if ($articleTitle !== $webName)
+		{
+			$this->redirect('this', array(
+				'articleId' => $article->id,
+				'articleTitle' => $webName
+			));
+		}
+
+
+		$this->template->article = $this->orm->articles->getById($articleId);
 	}
 
 
