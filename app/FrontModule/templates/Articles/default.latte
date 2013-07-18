@@ -1,0 +1,9 @@
+{block #content}
+
+<h2>Články</h2>
+
+<ul>
+	<li n:foreach="$articles as $article"><a n:href="Articles:view $article->id">{$article->title}</a></li>
+</ul>
+
+{/block}

@@ -16,6 +16,7 @@ use Orm;
  * @author Jan Tvrdík
  *
  * @property-read UsersRepository $users
+ * @property-read ArticlesRepository $articles
  */
 class RepositoryContainer extends Orm\RepositoryContainer
 {

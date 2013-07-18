@@ -16,7 +16,7 @@ nette:
 	application:
 		errorPresenter: Error
 		mapping:
-			*: App\*Module\*Presenter
+			*: App\*\*Presenter
 		templateFactory: App\TemplateFactory(Nette.templateCacheStorage)
 
 	session:

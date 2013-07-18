@@ -13,7 +13,7 @@ use Orm;
  * @property DateTime $createdAt {default now}
  * @property bool $visible {default true}
  *
- * @property App\User $createdBy {m:1 App\UsersRepository $createdArticles}
+ * @property App\User $createdBy {m:1 App\UsersRepository $articles}
  *
  */
 class Article extends Entity

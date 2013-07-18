@@ -17,8 +17,9 @@ class Router extends RouteList
 	{
 		parent::__construct();
 
-		$this[] = new Route('index.php', 'Homepage:default', Route::ONE_WAY);
-		$this[] = new Route('<presenter>/<action>[/<id>]', 'Homepage:default');
+		$this[] = new Front\Router();
+
+		$this[] = new Admin\Router();
 	}
 
 }
