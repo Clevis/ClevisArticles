@@ -52,3 +52,7 @@ form .error {
 html.js .jshidden {
 	display: none;
 }
+
+body {
+	padding-top: 60px;
+}
