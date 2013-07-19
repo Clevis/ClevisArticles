@@ -129,7 +129,7 @@ final class ArticlesPresenter extends BasePresenter
 		$this->orm->articles->flush();
 
 		$this->flashMessage('Článek byl úspěšně uložen.', 'success');
-		$this->redirect('Articles:');
+		$this->redirect('Articles:edit', $article->id);
 	}
 
 }
