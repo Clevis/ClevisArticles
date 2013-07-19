@@ -35,10 +35,10 @@ final class ArticlesPresenter extends BasePresenter
 				return $el;
 			});
 
-		$grid->addActionHref('edit', 'Edit')
+		$grid->addActionHref('edit', 'Editovat')
 			->setIcon('pencil');
 
-		$grid->addActionHref('delete', 'Delete')
+		$grid->addActionHref('delete', 'Smazat')
 			->setIcon('trash')
 			->setConfirm(function($item) {
 				return 'Opravdu chcete smazat ' . $item->title . ' ?';
