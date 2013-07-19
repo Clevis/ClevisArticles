@@ -52,7 +52,7 @@ final class ArticlesPresenter extends BasePresenter
 	 */
 	public function actionAdd()
 	{
-		$this->template->heading = 'Přidat článek';
+		$this->template->heading = 'Nový článek';
 		$this->view = 'edit';
 	}
 
@@ -75,7 +75,7 @@ final class ArticlesPresenter extends BasePresenter
 	public function actionEdit($id)
 	{
 		$article = $this->orm->articles->getById($id);
-		$this->template->heading = 'Article editting';
+		$this->template->heading = 'Editace článku';
 
 		$this['editArticle']->setDefaults($article);
 	}
@@ -90,14 +90,15 @@ final class ArticlesPresenter extends BasePresenter
 
 		$form->addHidden('id');
 
-		$form->addText('title', 'Titulek')
-			->setRequired('Prosím vyplňte titulek.');
-		$form->addTextArea('intro', 'Perex');
-		$form->addTextArea('text', 'text');
+		$form->addText('title', 'Název článku')
+			->setRequired('Prosím vyplňte titulek.')
+			->setAttribute('placeholder', 'Název článku');
+		$form->addTextArea('intro', 'Perex')->setAttribute('placeholder', 'Perex');
+		$form->addTextArea('text', 'Obsah')->setAttribute('placeholder', 'Obsah');
 
 		$form->addCheckbox('visible', 'Viditelné');
 
-		$form->addSubmit('save', 'Uložit');
+		$form->addSubmit('save', 'Uložit článek');
 
 		$form->onSuccess[] = callback($this, 'editArticleFormSubmitted');
 
