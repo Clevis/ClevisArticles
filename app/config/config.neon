@@ -27,6 +27,9 @@ services:
 	router: App\Router
 	authenticator: App\Authenticator
 
+	helperLoader:
+		factory: App\HelperLoader
+
 	templateFactory: Clevispace\TemplateFactory(@nette.templateCacheStorage, [@container, createServiceNette__template])
 	passwordHashCalculator: Clevispace\PasswordHashCalculator
 

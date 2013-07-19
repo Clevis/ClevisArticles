@@ -24,4 +24,16 @@ abstract class BasePresenter extends Clevispace\BasePresenter
 		return $this->context->getService('repositoryContainer');
 	}
 
+	/**
+	 * Registers helperLoader
+	 *
+	 * @return Nette\Templating\ITemplate
+	 */
+	public function createTemplate($class = NULL)
+	{
+		$template = parent::createTemplate($class);
+		$template->registerHelperLoader(callback($this->context->helperLoader, 'loader'));
+		return $template;
+	}
+
 }
