@@ -5,7 +5,8 @@ namespace App\Admin;
 use Grido,
 	Grido\Components\Columns\Column,
 	Nette\Application\UI\Form,
-	App\Article;
+	App\Article,
+	Nette\Utils\Html;
 
 
 /**
@@ -25,12 +26,14 @@ final class ArticlesPresenter extends BasePresenter
 
 		$grid->setTemplateFile(__DIR__ . '/../templates/components/grid.latte');
 
-		$grid->addColumnText('title', 'Titulek')
-			 ->headerPrototype->style = 'width: 40%'; // todo
-		$grid->addColumnText('created_at', 'Vytvořeno')
-			 ->headerPrototype->style = 'width: 20%';
+		$grid->addColumnText('title', 'Titulek');
+		$grid->addColumnText('created_at', 'Vytvořeno');
 		$grid->addColumnText('visible', 'Viditelné')
-			 ->headerPrototype->style = 'width: 1%';
+			->setCustomRender(function ($article) {
+				$el = Html::el('i');
+				$el->class = $article->visible ? 'icon-ok' : 'icon-remove';
+				return $el;
+			});
 
 		$grid->addActionHref('edit', 'Edit')
 			->setIcon('pencil');
@@ -51,6 +54,18 @@ final class ArticlesPresenter extends BasePresenter
 	{
 		$this->template->heading = 'Přidat článek';
 		$this->view = 'edit';
+	}
+
+	/**
+	 * Removing an article
+	 */
+	public function actionDelete($id)
+	{
+		$this->orm->articles->remove($id);
+		$this->orm->flush();
+
+		$this->flashMessage('Článek byl úspěšně smazán.');
+		$this->redirect('Articles:');
 	}
 
 	/**
