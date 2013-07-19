@@ -25,9 +25,12 @@
 	<header class="navbar navbar-static-top">
 		<div class="container">
 			<a class="navbar-brand">Administrace</a>
+			{if $signed}
 				<ul class="nav navbar-nav">
 					<li {ifCurrent Articles:*}class="active"{/ifCurrent}><a n:href="Articles:">Články</a></li>
 				</ul>
+				<p class="navbar-text pull-right"><a n:href="Sign:out">Odhlásit se</a></p>
+			{/if}
 		</div>
 	</header>
 

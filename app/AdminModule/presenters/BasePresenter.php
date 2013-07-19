@@ -15,6 +15,8 @@ abstract class BasePresenter extends App\BasePresenter
 	{
 		parent::beforeRender();
 
+		$this->template->signed = $this->user->isLoggedIn();
+
 		if ($this->name !== 'Admin:Sign')
 		{
 			if (!$this->user->isLoggedIn())
