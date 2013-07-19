@@ -22,17 +22,14 @@
 	<script src="{$basePath}/js/jquery.ba-hashchange.min.js"></script>
 </head>
 <body>
-
-
-	<div class="navbar navbar-fixed-top">
-		<div class="navbar-inner">
-			<div class="container">
-				<ul class="nav">
+	<header class="navbar navbar-static-top">
+		<div class="container">
+			<a class="navbar-brand">Administrace</a>
+				<ul class="nav navbar-nav">
 					<li {ifCurrent Articles:*}class="active"{/ifCurrent}><a n:href="Articles:">Články</a></li>
 				</ul>
-			</div>
 		</div>
-	</div>
+	</header>
 
 	<div class="container">
 		{foreach $flashes as $flash}
