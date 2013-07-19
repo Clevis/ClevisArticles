@@ -2,9 +2,10 @@
 
 namespace App;
 
-use Nette;
-use Texy;
-use TexyHeadingModule;
+use Nette,
+	Texy,
+	TexyHeadingModule,
+	TexyConfigurator;
 
 
 class HelperLoader extends Nette\Object
@@ -26,16 +27,33 @@ class HelperLoader extends Nette\Object
 	}
 
 	/**
-	 * Zpracování přes Texy!
+	 * Processing by Texy!
 	 *
 	 * @param string
 	 * @return string
 	 */
 	public function texy($value)
 	{
-		$texy = new Texy();
-		$texy->headingModule->balancing = TexyHeadingModule::FIXED;
+		$texy = $this->createTexy();
 		return $texy->process($value);
+	}
+
+	/**
+	 * Creating and setting up texy
+	 * @return Texy
+	 */
+	protected function createTexy()
+	{
+		$texy = new Texy();
+		TexyConfigurator::safeMode($texy);
+		$texy->headingModule->balancing = TexyHeadingModule::FIXED;
+		$texy->allowedTags = $texy::NONE;
+		$texy->setOutputMode($texy::HTML5);
+		$texy->allowed['script'] = FALSE;
+		$texy->allowed['html/tag'] = FALSE;
+		$texy->allowed['html/comment'] = FALSE;
+
+		return $texy;
 	}
 
 }
