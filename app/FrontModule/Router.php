@@ -14,7 +14,7 @@ class Router extends RouteList
 	{
 		parent::__construct($module);
 
-		// venue detail
+		// article detail
 		Route::addStyle('articleTitle');
 		Route::setStyleProperty('articleTitle', Route::FILTER_OUT, function($title) {
 			return Strings::webalize($title);
