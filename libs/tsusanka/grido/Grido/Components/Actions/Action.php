@@ -142,7 +142,7 @@ abstract class Action extends \Grido\Components\Base
     {
         if (!$this->elementPrototype) {
             $this->elementPrototype = Html::el('a')
-                ->setClass(array('no-ajax grid-action-' . $this->getName(), 'btn', 'btn-mini'));
+                ->setClass(array('no-ajax grid-action-' . $this->getName(), 'btn', 'btn-default', 'btn-small'));
         }
 
         return $this->elementPrototype;
@@ -177,7 +177,7 @@ abstract class Action extends \Grido\Components\Base
         }
 
         if ($this->icon) {
-            $element->insert(0, Html::el('i')->setClass(array("icon-$this->icon")));
+            $element->insert(0, Html::el('i')->setClass(array("glyphicon glyphicon-$this->icon")));
         }
 
         return $element;

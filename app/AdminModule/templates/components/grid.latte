@@ -97,24 +97,24 @@
 
                 <span n:if="$paginator->steps && $paginator->pageCount > 1" n:block="paginator" class="paginator">
                     {if $control->page == 1}
-                        <span class="btn btn-mini disabled" n:href="page! page => $paginator->page - 1"><i class="icon-arrow-left"></i> {_'Předchozí'}</span>
+                        <span class="btn btn-default btn-small disabled" n:href="page! page => $paginator->page - 1"><i class="glyphicon glyphicon-arrow-left"></i> {_'Předchozí'}</span>
                     {else}
-                        <a class="btn btn-mini" n:href="page! page => $paginator->page - 1"><i class="icon-arrow-left"></i> {_'Předchozí'}</a>
+                        <a class="btn btn-default btn-small" n:href="page! page => $paginator->page - 1"><i class="glyphicon glyphicon-arrow-left"></i> {_'Předchozí'}</a>
                     {/if}
                     {var $steps = $paginator->getSteps()}
                     {foreach $steps as $step}
                         {if $step == $control->page}
-                            <span class="btn btn-mini disabled">{$step}</span>
+                            <span class="btn btn-default btn-small disabled">{$step}</span>
                         {else}
-                            <a class="btn btn-mini" n:href="page! page => $step">{$step}</a>
+                            <a class="btn btn-default btn-small" n:href="page! page => $step">{$step}</a>
                         {/if}
                         <a n:if="$iterator->nextValue > $step + 1" class="promt no-ajax" data-grido-promt="{_'Vložte stránku:'}" data-grido-link="{link page! page => 0}">...</a>
                         {var $prevStep = $step}
                     {/foreach}
                     {if $control->page == $paginator->getPageCount()}
-                        <span class="btn btn-mini disabled" n:href="page! page => $paginator->page + 1">{_'Další'} <i class="icon-arrow-right"></i></span>
+                        <span class="btn btn-default btn-small disabled" n:href="page! page => $paginator->page + 1">{_'Další'} <i class="glyphicon glyphicon-arrow-right"></i></span>
                     {else}
-                        <a class="btn btn-mini" n:href="page! page => $paginator->page + 1">{_'Další'} <i class="icon-arrow-right"></i></a>
+                        <a class="btn btn-default btn-small" n:href="page! page => $paginator->page + 1">{_'Další'} <i class="glyphicon glyphicon-arrow-right"></i></a>
                     {/if}
                 </span>
 
@@ -124,7 +124,7 @@
                     {formContainer buttons}
                         {input perPage, class => 'hide'}
                     {/formContainer}
-                    <a n:if="$control->hasExporting()" class="btn btn-mini no-ajax" href="{=$control->getComponent(Grido\Components\Export::ID)->link('export!')}" title="{_'Export all items'}"><i class="icon-download"></i></a>
+                    <a n:if="$control->hasExporting()" class="btn btn-default btn-small no-ajax" href="{=$control->getComponent(Grido\Components\Export::ID)->link('export!')}" title="{_'Export all items'}"><i class="glyphicon glyphicon-download"></i></a>
                 </span>
             </td>
         </tr>

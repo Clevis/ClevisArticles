@@ -31,7 +31,7 @@ final class ArticlesPresenter extends BasePresenter
 		$grid->addColumnText('visible', 'Viditelné')
 			->setCustomRender(function ($article) {
 				$el = Html::el('i');
-				$el->class = $article->visible ? 'icon-ok' : 'icon-remove';
+				$el->class = $article->visible ? 'glyphicon glyphicon-ok' : 'glyphicon glyphicon-remove';
 				return $el;
 			});
 
