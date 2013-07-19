@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.1.0" />
+
+	<title>Class Orm\IdentityMap | Orm</title>
+
+	<script type="text/javascript" src="resources/combined.js?37748604"></script>
+	<script type="text/javascript" src="elementlist.js?4251123146"></script>
+	<script type="text/javascript">
+		var ApiGen = ApiGen || {};
+		ApiGen.options = {"elementDetailsCollapsed":true};
+	</script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2490775220" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+		<div id="groups">
+			<h3>Packages</h3>
+			<ul>
+				<li class="active"><a href="package-Orm.html">Orm</a>
+						<span></span>
+						<ul>
+				<li><a href="package-Orm.Common.html">Common</a>
+						<span></span>
+						<ul>
+				<li><a href="package-Orm.Common.Exceptions.html">Common\Exceptions</a>
+						</li>
+							</ul></li>
+				<li><a href="package-Orm.DI.html">DI</a>
+						<span></span>
+						<ul>
+				<li><a href="package-Orm.DI.Exceptions.html">DI\Exceptions</a>
+						</li>
+							</ul></li>
+				<li><a href="package-Orm.Entity.html">Entity</a>
+						<span></span>
+						<ul>
+				<li><a href="package-Orm.Entity.EntityFragments.html">Entity\EntityFragments</a>
+						</li>
+				<li><a href="package-Orm.Entity.Exceptions.html">Entity\Exceptions</a>
+						</li>
+				<li><a href="package-Orm.Entity.Helpers.html">Entity\Helpers</a>
+						</li>
+				<li><a href="package-Orm.Entity.Injection.html">Entity\Injection</a>
+						</li>
+				<li><a href="package-Orm.Entity.MetaData.html">Entity\MetaData</a>
+						</li>
+							</ul></li>
+				<li><a href="package-Orm.Mappers.html">Mappers</a>
+						<span></span>
+						<ul>
+				<li><a href="package-Orm.Mappers.Collection.html">Mappers\Collection</a>
+						<span></span>
+						<ul>
+				<li><a href="package-Orm.Mappers.Collection.Helpers.html">Mappers\Collection\Helpers</a>
+						</li>
+							</ul></li>
+				<li><a href="package-Orm.Mappers.Conventional.html">Mappers\Conventional</a>
+						</li>
+				<li><a href="package-Orm.Mappers.Exceptions.html">Mappers\Exceptions</a>
+						</li>
+				<li><a href="package-Orm.Mappers.Factory.html">Mappers\Factory</a>
+						<span></span>
+						<ul>
+				<li><a href="package-Orm.Mappers.Factory.Exceptions.html">Mappers\Factory\Exceptions</a>
+						</li>
+							</ul></li>
+				<li><a href="package-Orm.Mappers.Helpers.html">Mappers\Helpers</a>
+						</li>
+							</ul></li>
+				<li><a href="package-Orm.Relationships.html">Relationships</a>
+						<span></span>
+						<ul>
+				<li><a href="package-Orm.Relationships.Exceptions.html">Relationships\Exceptions</a>
+						</li>
+				<li><a href="package-Orm.Relationships.Mappers.html">Relationships\Mappers</a>
+						</li>
+				<li><a href="package-Orm.Relationships.MetaData.html">Relationships\MetaData</a>
+						</li>
+							</ul></li>
+				<li class="active"><a href="package-Orm.Repository.html">Repository</a>
+						<span></span>
+						<ul>
+				<li><a href="package-Orm.Repository.Events.html">Repository\Events</a>
+						<span></span>
+						<ul>
+				<li><a href="package-Orm.Repository.Events.Types.html">Repository\Events\Types</a>
+						</li>
+							</ul></li>
+				<li><a href="package-Orm.Repository.Exceptions.html">Repository\Exceptions</a>
+						</li>
+				<li class="active"><a href="package-Orm.Repository.Helpers.html">Repository\Helpers</a>
+						</li>
+							</ul></li>
+				<li><a href="package-Orm.RepositoryContainer.html">RepositoryContainer</a>
+						<span></span>
+						<ul>
+				<li><a href="package-Orm.RepositoryContainer.Exceptions.html">RepositoryContainer\Exceptions</a>
+						</li>
+							</ul></li></ul></li>
+			</ul>
+
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active"><a href="namespace-Orm.html">Orm</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-Orm.IdentityMap.html">IdentityMap</a></li>
+				<li><a href="class-Orm.MapperAutoCaller.html">MapperAutoCaller</a></li>
+				<li><a href="class-Orm.PerformanceHelper.html">PerformanceHelper</a></li>
+				<li><a href="class-Orm.RepositoryHelper.html">RepositoryHelper</a></li>
+			</ul>
+
+
+
+			<h3>Exceptions</h3>
+			<ul>
+				<li><a href="class-Orm.MapperAutoCallerException.html">MapperAutoCallerException</a></li>
+			</ul>
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="package-Orm.Repository.Helpers.html" title="Summary of Orm\Repository\Helpers"><span>Package</span></a>
+			</li>
+			<li>
+				<a href="namespace-Orm.html" title="Summary of Orm"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+	</div>
+
+<div id="content">
+	<h1>Class IdentityMap</h1>
+
+	<div class="description">
+	
+<p>Identity map over repository. And also check and hydrate entity (for
+optimization reasons).</p>
+
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+			<a href="class-Orm.Object.html">Orm\Object</a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.gif" alt="Extended by" />
+<b>Orm\IdentityMap</b>			
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Orm.html">Orm</a><br />
+
+				<b>Package:</b>
+				<a href="package-Orm.html">Orm</a> <br />
+				<b>Subpackage:</b>
+				<a href="package-Orm.Repository.Helpers.html">Repository\Helpers</a> <br />
+				<b>Author:</b>
+				Petr Procházka<br />
+		<b>Located at</b> <a href="source-class-Orm.IdentityMap.html#10" title="Go to source code">Repository/Helpers/IdentityMap.php</a><br />
+	</div>
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="right min"><code class="nowrap">
+			
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#___construct">#</a>
+		<code class="wrap"><a href="source-class-Orm.IdentityMap.html#45" title="Go to source code">__construct</a>( <a href="class-Orm.IRepository.html"><span class="nowrap">Orm\IRepository</span></a> <span class="nowrap"><var>$repository</var></span>, <a href="class-Orm.PerformanceHelper.html"><span class="nowrap">Orm\PerformanceHelper</span></a> <span class="nowrap"><var>$performanceHelper</var> = <span class="php-keyword1">NULL</span></span> )</code>
+
+		<div class="short">
+			
+		</div>
+
+		<div class="detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$repository</var></dt>
+					<dd><code><code><a href="class-Orm.IRepository.html">Orm\IRepository</a></code></code></dd>
+					<dt><var>$performanceHelper</var></dt>
+					<dd><code><code><a href="class-Orm.PerformanceHelper.html">Orm\PerformanceHelper</a></code>|null</code></dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getById" id="_getById">
+
+		<td class="right min"><code class="nowrap">
+			
+			 public 
+			<code><a href="class-Orm.IEntity.html">Orm\IEntity</a></code>|false|null
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_getById">#</a>
+		<code class="wrap"><a href="source-class-Orm.IdentityMap.html#67" title="Go to source code">getById</a>( scalar <span class="nowrap"><var>$id</var></span> )</code>
+
+		<div class="short">
+			
+		</div>
+
+		<div class="detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$id</var></dt>
+					<dd><code>scalar</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code><code><a href="class-Orm.IEntity.html">Orm\IEntity</a></code>|false|null</code><br />false = urcite neexistuje NULL = zatim neni v identity map<br />
+				</div>
+
+
+				<h4>See</h4>
+				<div class="smallList">
+						<code><code><a href="class-Orm.IRepository.html#_getById">Orm\IRepository::getById()</a></code></code> <br />
+				</div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="add" id="_add">
+
+		<td class="right min"><code class="nowrap">
+			
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_add">#</a>
+		<code class="wrap"><a href="source-class-Orm.IdentityMap.html#95" title="Go to source code">add</a>( scalar <span class="nowrap"><var>$id</var></span>, <a href="class-Orm.IEntity.html"><span class="nowrap">Orm\IEntity</span></a> <span class="nowrap"><var>$entity</var></span> )</code>
+
+		<div class="short">
+			Add to identity map by his id.
+		</div>
+
+		<div class="detailed hidden">
+			
+<p>Add to identity map by his id.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$id</var></dt>
+					<dd><code>scalar</code></dd>
+					<dt><var>$entity</var></dt>
+					<dd><code><code><a href="class-Orm.IEntity.html">Orm\IEntity</a></code></code></dd>
+				</dl></div>
+
+
+
+				<h4>See</h4>
+				<div class="smallList">
+						<code><code><a href="class-Orm.IRepository.html#_persist">Orm\IRepository::persist()</a></code></code> <br />
+				</div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="remove" id="_remove">
+
+		<td class="right min"><code class="nowrap">
+			
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_remove">#</a>
+		<code class="wrap"><a href="source-class-Orm.IdentityMap.html#107" title="Go to source code">remove</a>( scalar <span class="nowrap"><var>$id</var></span> )</code>
+
+		<div class="short">
+			Remove from identity map by his id.
+		</div>
+
+		<div class="detailed hidden">
+			
+<p>Remove from identity map by his id.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$id</var></dt>
+					<dd><code>scalar</code></dd>
+				</dl></div>
+
+
+
+				<h4>See</h4>
+				<div class="smallList">
+						<code><code><a href="class-Orm.IRepository.html#_remove">Orm\IRepository::remove()</a></code></code> <br />
+				</div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="attach" id="_attach">
+
+		<td class="right min"><code class="nowrap">
+			
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_attach">#</a>
+		<code class="wrap"><a href="source-class-Orm.IdentityMap.html#118" title="Go to source code">attach</a>( <a href="class-Orm.IEntity.html"><span class="nowrap">Orm\IEntity</span></a> <span class="nowrap"><var>$entity</var></span> )</code>
+
+		<div class="short">
+			Attach as new not persisted entity.
+		</div>
+
+		<div class="detailed hidden">
+			
+<p>Attach as new not persisted entity.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$entity</var></dt>
+					<dd><code><code><a href="class-Orm.IEntity.html">Orm\IEntity</a></code></code></dd>
+				</dl></div>
+
+
+
+				<h4>See</h4>
+				<div class="smallList">
+						<code><code><a href="class-Orm.IRepository.html#_attach">Orm\IRepository::attach()</a></code></code> <br />
+				</div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="detach" id="_detach">
+
+		<td class="right min"><code class="nowrap">
+			
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_detach">#</a>
+		<code class="wrap"><a href="source-class-Orm.IdentityMap.html#129" title="Go to source code">detach</a>( <a href="class-Orm.IEntity.html"><span class="nowrap">Orm\IEntity</span></a> <span class="nowrap"><var>$entity</var></span> )</code>
+
+		<div class="short">
+			Detach as new not persisted entity.
+		</div>
+
+		<div class="detailed hidden">
+			
+<p>Detach as new not persisted entity.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$entity</var></dt>
+					<dd><code><code><a href="class-Orm.IEntity.html">Orm\IEntity</a></code></code></dd>
+				</dl></div>
+
+
+
+				<h4>See</h4>
+				<div class="smallList">
+						<code><code><a href="class-Orm.IRepository.html#_remove">Orm\IRepository::remove()</a></code></code> <br />
+				</div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="create" id="_create">
+
+		<td class="right min"><code class="nowrap">
+			
+			 public 
+			<code><a href="class-Orm.IEntity.html">Orm\IEntity</a></code>
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_create">#</a>
+		<code class="wrap"><a href="source-class-Orm.IdentityMap.html#140" title="Go to source code">create</a>( array <span class="nowrap"><var>$data</var></span> )</code>
+
+		<div class="short">
+			Vytvori entity, nebo vrati tuto existujici.
+		</div>
+
+		<div class="detailed hidden">
+			
+<p>Vytvori entity, nebo vrati tuto existujici.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$data</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code><code><a href="class-Orm.IEntity.html">Orm\IEntity</a></code></code><br />
+				</div>
+
+
+				<h4>See</h4>
+				<div class="smallList">
+						<code><code><a href="class-Orm.IRepository.html#_hydrateEntity">Orm\IRepository::hydrateEntity()</a></code></code> <br />
+				</div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="check" id="_check">
+
+		<td class="right min"><code class="nowrap">
+			
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_check">#</a>
+		<code class="wrap"><a href="source-class-Orm.IdentityMap.html#174" title="Go to source code">check</a>( <a href="class-Orm.IEntity.html"><span class="nowrap">Orm\IEntity</span></a> <span class="nowrap"><var>$entity</var></span>, boolean <span class="nowrap"><var>$throw</var> = <span class="php-keyword1">true</span></span> )</code>
+
+		<div class="short">
+			Check if it is correct entity.
+		</div>
+
+		<div class="detailed hidden">
+			
+<p>Check if it is correct entity.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$entity</var></dt>
+					<dd><code><code><a href="class-Orm.IEntity.html">Orm\IEntity</a></code></code></dd>
+					<dt><var>$throw</var></dt>
+					<dd><code>boolean</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code>boolean</code><br />
+				</div>
+
+				<h4>Throws</h4>
+				<div class="smallList">
+					<code><code><a href="class-Orm.InvalidEntityException.html">Orm\InvalidEntityException</a></code></code><br />
+				</div>
+
+				<h4>See</h4>
+				<div class="smallList">
+						<code><code><a href="class-Orm.IRepository.html#_getEntityClassName">Orm\IRepository::getEntityClassName()</a></code></code> <br />
+				</div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getAll" id="_getAll">
+
+		<td class="right min"><code class="nowrap">
+			
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_getAll">#</a>
+		<code class="wrap"><a href="source-class-Orm.IdentityMap.html#195" title="Go to source code">getAll</a>( )</code>
+
+		<div class="short">
+			
+		</div>
+
+		<div class="detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code>array</code><br />of id =&gt; IEntity all entity with id handled by identity map<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getAllNew" id="_getAllNew">
+
+		<td class="right min"><code class="nowrap">
+			
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_getAllNew">#</a>
+		<code class="wrap"><a href="source-class-Orm.IdentityMap.html#201" title="Go to source code">getAllNew</a>( )</code>
+
+		<div class="short">
+			
+		</div>
+
+		<div class="detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code>array</code><br />of IEntity all entity without id handled by identity map<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+	<table class="summary methods">
+	<caption>Methods inherited from <a href="class-Orm.Object.html#methods">Orm\Object</a></caption>
+	<tr>
+		<td><code>
+<a href="class-Orm.Object.html#___call">__call()</a>, 
+<a href="class-Orm.Object.html#___callStatic">__callStatic()</a>, 
+<a href="class-Orm.Object.html#___get">__get()</a>, 
+<a href="class-Orm.Object.html#___isset">__isset()</a>, 
+<a href="class-Orm.Object.html#___set">__set()</a>, 
+<a href="class-Orm.Object.html#___unset">__unset()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		Orm API documentation generated by <a href="http://apigen.org">ApiGen</a>.
+	</div>
+</div>
+</div>
+</body>
+</html>

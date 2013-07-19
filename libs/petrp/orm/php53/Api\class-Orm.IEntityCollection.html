@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.1.0" />
+
+	<title>Interface Orm\IEntityCollection | Orm</title>
+
+	<script type="text/javascript" src="resources/combined.js?37748604"></script>
+	<script type="text/javascript" src="elementlist.js?4251123146"></script>
+	<script type="text/javascript">
+		var ApiGen = ApiGen || {};
+		ApiGen.options = {"elementDetailsCollapsed":true};
+	</script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2490775220" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+		<div id="groups">
+			<h3>Packages</h3>
+			<ul>
+				<li class="active"><a href="package-Orm.html">Orm</a>
+						<span></span>
+						<ul>
+				<li><a href="package-Orm.Common.html">Common</a>
+						<span></span>
+						<ul>
+				<li><a href="package-Orm.Common.Exceptions.html">Common\Exceptions</a>
+						</li>
+							</ul></li>
+				<li><a href="package-Orm.DI.html">DI</a>
+						<span></span>
+						<ul>
+				<li><a href="package-Orm.DI.Exceptions.html">DI\Exceptions</a>
+						</li>
+							</ul></li>
+				<li><a href="package-Orm.Entity.html">Entity</a>
+						<span></span>
+						<ul>
+				<li><a href="package-Orm.Entity.EntityFragments.html">Entity\EntityFragments</a>
+						</li>
+				<li><a href="package-Orm.Entity.Exceptions.html">Entity\Exceptions</a>
+						</li>
+				<li><a href="package-Orm.Entity.Helpers.html">Entity\Helpers</a>
+						</li>
+				<li><a href="package-Orm.Entity.Injection.html">Entity\Injection</a>
+						</li>
+				<li><a href="package-Orm.Entity.MetaData.html">Entity\MetaData</a>
+						</li>
+							</ul></li>
+				<li class="active"><a href="package-Orm.Mappers.html">Mappers</a>
+						<span></span>
+						<ul>
+				<li class="active"><a href="package-Orm.Mappers.Collection.html">Mappers\Collection</a>
+						<span></span>
+						<ul>
+				<li><a href="package-Orm.Mappers.Collection.Helpers.html">Mappers\Collection\Helpers</a>
+						</li>
+							</ul></li>
+				<li><a href="package-Orm.Mappers.Conventional.html">Mappers\Conventional</a>
+						</li>
+				<li><a href="package-Orm.Mappers.Exceptions.html">Mappers\Exceptions</a>
+						</li>
+				<li><a href="package-Orm.Mappers.Factory.html">Mappers\Factory</a>
+						<span></span>
+						<ul>
+				<li><a href="package-Orm.Mappers.Factory.Exceptions.html">Mappers\Factory\Exceptions</a>
+						</li>
+							</ul></li>
+				<li><a href="package-Orm.Mappers.Helpers.html">Mappers\Helpers</a>
+						</li>
+							</ul></li>
+				<li><a href="package-Orm.Relationships.html">Relationships</a>
+						<span></span>
+						<ul>
+				<li><a href="package-Orm.Relationships.Exceptions.html">Relationships\Exceptions</a>
+						</li>
+				<li><a href="package-Orm.Relationships.Mappers.html">Relationships\Mappers</a>
+						</li>
+				<li><a href="package-Orm.Relationships.MetaData.html">Relationships\MetaData</a>
+						</li>
+							</ul></li>
+				<li><a href="package-Orm.Repository.html">Repository</a>
+						<span></span>
+						<ul>
+				<li><a href="package-Orm.Repository.Events.html">Repository\Events</a>
+						<span></span>
+						<ul>
+				<li><a href="package-Orm.Repository.Events.Types.html">Repository\Events\Types</a>
+						</li>
+							</ul></li>
+				<li><a href="package-Orm.Repository.Exceptions.html">Repository\Exceptions</a>
+						</li>
+				<li><a href="package-Orm.Repository.Helpers.html">Repository\Helpers</a>
+						</li>
+							</ul></li>
+				<li><a href="package-Orm.RepositoryContainer.html">RepositoryContainer</a>
+						<span></span>
+						<ul>
+				<li><a href="package-Orm.RepositoryContainer.Exceptions.html">RepositoryContainer\Exceptions</a>
+						</li>
+							</ul></li></ul></li>
+			</ul>
+
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active"><a href="namespace-Orm.html">Orm</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Orm.ArrayCollection.html">ArrayCollection</a></li>
+				<li><a href="class-Orm.BaseDibiCollection.html">BaseDibiCollection</a></li>
+				<li><a href="class-Orm.DataSourceCollection.html">DataSourceCollection</a></li>
+				<li><a href="class-Orm.DibiCollection.html">DibiCollection</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li class="active"><a href="class-Orm.IEntityCollection.html">IEntityCollection</a></li>
+			</ul>
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="package-Orm.Mappers.Collection.html" title="Summary of Orm\Mappers\Collection"><span>Package</span></a>
+			</li>
+			<li>
+				<a href="namespace-Orm.html" title="Summary of Orm"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+	</div>
+
+<div id="content">
+	<h1>Interface IEntityCollection</h1>
+
+	<div class="description">
+	
+<p>Collection of entities.</p>
+
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+<b>Orm\IEntityCollection</b>			
+			 implements 
+				<a href="class-Countable.html">Countable</a>, 
+			
+				<a href="class-IteratorAggregate.html">IteratorAggregate</a>
+			
+			
+		</dd>
+	</dl>
+
+
+
+	<div>
+		<h4>Direct known implementers</h4>
+			<a href="class-Orm.ArrayCollection.html">Orm\ArrayCollection</a>, 
+			<a href="class-Orm.BaseDibiCollection.html">Orm\BaseDibiCollection</a>
+	</div>
+
+	<div>
+		<h4>Indirect known implementers</h4>
+			<a href="class-Orm.DataSourceCollection.html">Orm\DataSourceCollection</a>, 
+			<a href="class-Orm.DibiCollection.html">Orm\DibiCollection</a>
+	</div>
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Orm.html">Orm</a><br />
+
+				<b>Package:</b>
+				<a href="package-Orm.html">Orm</a> <br />
+				<b>Subpackage:</b>
+				<a href="package-Orm.Mappers.Collection.html">Mappers\Collection</a> <br />
+				<b>Author:</b>
+				Petr Procházka<br />
+		<b>Located at</b> <a href="source-class-Orm.IEntityCollection.html#13" title="Go to source code">Mappers/Collection/IEntityCollection.php</a><br />
+	</div>
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="orderBy" id="_orderBy">
+
+		<td class="right min"><code class="nowrap">
+			
+			 public 
+			<code><a href="class-Orm.IEntityCollection.html">Orm\IEntityCollection</a></code>
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_orderBy">#</a>
+		<code class="wrap"><a href="source-class-Orm.IEntityCollection.html#28" title="Go to source code">orderBy</a>( string|array <span class="nowrap"><var>$row</var></span>, string <span class="nowrap"><var>$direction</var> = <code><a href="class-Orm.IEntityCollection.html#ASC">Orm\IEntityCollection::<b>ASC</b></a></code></span> )</code>
+
+		<div class="short">
+			Selects columns to order by.
+		</div>
+
+		<div class="detailed hidden">
+			
+<p>Selects columns to order by.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$row</var></dt>
+					<dd><code>string|array</code><br />column name or array of column names</dd>
+					<dt><var>$direction</var></dt>
+					<dd><code>string</code><br />sorting direction self::ASC or self::DESC</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code><code><a href="class-Orm.IEntityCollection.html">Orm\IEntityCollection</a></code></code><br />$this<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="applyLimit" id="_applyLimit">
+
+		<td class="right min"><code class="nowrap">
+			
+			 public 
+			<code><a href="class-Orm.IEntityCollection.html">Orm\IEntityCollection</a></code>
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_applyLimit">#</a>
+		<code class="wrap"><a href="source-class-Orm.IEntityCollection.html#36" title="Go to source code">applyLimit</a>( integer <span class="nowrap"><var>$limit</var></span>, integer <span class="nowrap"><var>$offset</var> = <span class="php-keyword1">NULL</span></span> )</code>
+
+		<div class="short">
+			Limits number of rows.
+		</div>
+
+		<div class="detailed hidden">
+			
+<p>Limits number of rows.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$limit</var></dt>
+					<dd><code>integer</code></dd>
+					<dt><var>$offset</var></dt>
+					<dd><code>integer</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code><code><a href="class-Orm.IEntityCollection.html">Orm\IEntityCollection</a></code></code><br />$this<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="fetch" id="_fetch">
+
+		<td class="right min"><code class="nowrap">
+			
+			 public 
+			<code><a href="class-Orm.IEntity.html">Orm\IEntity</a></code>|null
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_fetch">#</a>
+		<code class="wrap"><a href="source-class-Orm.IEntityCollection.html#44" title="Go to source code">fetch</a>( )</code>
+
+		<div class="short">
+			Fetches the first row.
+		</div>
+
+		<div class="detailed hidden">
+			
+<p>Fetches the first row.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code><code><a href="class-Orm.IEntity.html">Orm\IEntity</a></code>|null</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="fetchAll" id="_fetchAll">
+
+		<td class="right min"><code class="nowrap">
+			
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_fetchAll">#</a>
+		<code class="wrap"><a href="source-class-Orm.IEntityCollection.html#50" title="Go to source code">fetchAll</a>( )</code>
+
+		<div class="short">
+			Fetches all records.
+		</div>
+
+		<div class="detailed hidden">
+			
+<p>Fetches all records.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code>array</code><br />of IEntity<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="fetchAssoc" id="_fetchAssoc">
+
+		<td class="right min"><code class="nowrap">
+			
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_fetchAssoc">#</a>
+		<code class="wrap"><a href="source-class-Orm.IEntityCollection.html#56" title="Go to source code">fetchAssoc</a>( string <span class="nowrap"><var>$assoc</var></span> )</code>
+
+		<div class="short">
+			Fetches all records and returns associative tree.
+		</div>
+
+		<div class="detailed hidden">
+			
+<p>Fetches all records and returns associative tree.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$assoc</var></dt>
+					<dd><code>string</code><br />associative descriptor</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code>array</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="fetchPairs" id="_fetchPairs">
+
+		<td class="right min"><code class="nowrap">
+			
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_fetchPairs">#</a>
+		<code class="wrap"><a href="source-class-Orm.IEntityCollection.html#63" title="Go to source code">fetchPairs</a>( string <span class="nowrap"><var>$key</var> = <span class="php-keyword1">NULL</span></span>, string <span class="nowrap"><var>$value</var> = <span class="php-keyword1">NULL</span></span> )</code>
+
+		<div class="short">
+			Fetches all records like $key =&gt; $value pairs.
+		</div>
+
+		<div class="detailed hidden">
+			
+<p>Fetches all records like $key =&gt; $value pairs.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$key</var></dt>
+					<dd><code>string</code><br />associative key</dd>
+					<dt><var>$value</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code>array</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="findBy" id="_findBy">
+
+		<td class="right min"><code class="nowrap">
+			
+			 public 
+			<code><a href="class-Orm.IEntityCollection.html">Orm\IEntityCollection</a></code>
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_findBy">#</a>
+		<code class="wrap"><a href="source-class-Orm.IEntityCollection.html#71" title="Go to source code">findBy</a>( array <span class="nowrap"><var>$where</var></span> )</code>
+
+		<div class="short">
+			Vraci kolekci entit dle kriterii.
+		</div>
+
+		<div class="detailed hidden">
+			
+<p>Vraci kolekci entit dle kriterii.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$where</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code><code><a href="class-Orm.IEntityCollection.html">Orm\IEntityCollection</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getBy" id="_getBy">
+
+		<td class="right min"><code class="nowrap">
+			
+			 public 
+			<code><a href="class-Orm.IEntity.html">Orm\IEntity</a></code>|null
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_getBy">#</a>
+		<code class="wrap"><a href="source-class-Orm.IEntityCollection.html#78" title="Go to source code">getBy</a>( array <span class="nowrap"><var>$where</var></span> )</code>
+
+		<div class="short">
+			Vraci jednu entitu dle kriterii.
+		</div>
+
+		<div class="detailed hidden">
+			
+<p>Vraci jednu entitu dle kriterii.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$where</var></dt>
+					<dd><code>array</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code><code><a href="class-Orm.IEntity.html">Orm\IEntity</a></code>|null</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="toArrayCollection" id="_toArrayCollection">
+
+		<td class="right min"><code class="nowrap">
+			
+			 public 
+			<code><a href="class-Orm.ArrayCollection.html">Orm\ArrayCollection</a></code>
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_toArrayCollection">#</a>
+		<code class="wrap"><a href="source-class-Orm.IEntityCollection.html#85" title="Go to source code">toArrayCollection</a>( )</code>
+
+		<div class="short">
+			
+		</div>
+
+		<div class="detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code><code><a href="class-Orm.ArrayCollection.html">Orm\ArrayCollection</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="toCollection" id="_toCollection">
+
+		<td class="right min"><code class="nowrap">
+			
+			 public 
+			<code><a href="class-Orm.IEntityCollection.html">Orm\IEntityCollection</a></code>
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_toCollection">#</a>
+		<code class="wrap"><a href="source-class-Orm.IEntityCollection.html#88" title="Go to source code">toCollection</a>( )</code>
+
+		<div class="short">
+			
+		</div>
+
+		<div class="detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code><code><a href="class-Orm.IEntityCollection.html">Orm\IEntityCollection</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+	<table class="summary methods">
+	<caption>Methods inherited from <a href="class-Countable.html#methods">Countable</a></caption>
+	<tr>
+		<td><code>
+<a href="class-Countable.html#_count">count()</a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary methods">
+	<caption>Methods inherited from <a href="class-IteratorAggregate.html#methods">IteratorAggregate</a></caption>
+	<tr>
+		<td><code>
+<a href="class-IteratorAggregate.html#_getIterator">getIterator()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+	<table class="summary" id="constants">
+	<caption>Constants summary</caption>
+	<tr data-order="ASC" id="ASC">
+
+		<td class="right min"><code class="nowrap">
+			
+			string
+		</code></td>
+		<td class="min"><code>
+				<a href="source-class-Orm.IEntityCollection.html#22" title="Go to source code"><b>ASC</b></a>
+		</code></td>
+		<td><code class="wrap"><span class="php-quote">'ASC'</span></code></td>
+		<td><div class="position">
+			<a href="#ASC" class="anchor">#</a>
+
+			<div class="short">
+				sorting order - vzestupne
+			</div>
+
+			<div class="detailed hidden">
+				
+<p>sorting order - vzestupne</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="DESC" id="DESC">
+
+		<td class="right min"><code class="nowrap">
+			
+			string
+		</code></td>
+		<td class="min"><code>
+				<a href="source-class-Orm.IEntityCollection.html#25" title="Go to source code"><b>DESC</b></a>
+		</code></td>
+		<td><code class="wrap"><span class="php-quote">'DESC'</span></code></td>
+		<td><div class="position">
+			<a href="#DESC" class="anchor">#</a>
+
+			<div class="short">
+				sorting order - sestupne
+			</div>
+
+			<div class="detailed hidden">
+				
+<p>sorting order - sestupne</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+</div>
+
+	<div id="footer">
+		Orm API documentation generated by <a href="http://apigen.org">ApiGen</a>.
+	</div>
+</div>
+</div>
+</body>
+</html>

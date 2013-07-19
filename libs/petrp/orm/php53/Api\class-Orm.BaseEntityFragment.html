@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.1.0" />
+
+	<title>Class Orm\BaseEntityFragment | Orm</title>
+
+	<script type="text/javascript" src="resources/combined.js?37748604"></script>
+	<script type="text/javascript" src="elementlist.js?4251123146"></script>
+	<script type="text/javascript">
+		var ApiGen = ApiGen || {};
+		ApiGen.options = {"elementDetailsCollapsed":true};
+	</script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2490775220" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+		<div id="groups">
+			<h3>Packages</h3>
+			<ul>
+				<li class="active"><a href="package-Orm.html">Orm</a>
+						<span></span>
+						<ul>
+				<li><a href="package-Orm.Common.html">Common</a>
+						<span></span>
+						<ul>
+				<li><a href="package-Orm.Common.Exceptions.html">Common\Exceptions</a>
+						</li>
+							</ul></li>
+				<li><a href="package-Orm.DI.html">DI</a>
+						<span></span>
+						<ul>
+				<li><a href="package-Orm.DI.Exceptions.html">DI\Exceptions</a>
+						</li>
+							</ul></li>
+				<li class="active"><a href="package-Orm.Entity.html">Entity</a>
+						<span></span>
+						<ul>
+				<li class="active"><a href="package-Orm.Entity.EntityFragments.html">Entity\EntityFragments</a>
+						</li>
+				<li><a href="package-Orm.Entity.Exceptions.html">Entity\Exceptions</a>
+						</li>
+				<li><a href="package-Orm.Entity.Helpers.html">Entity\Helpers</a>
+						</li>
+				<li><a href="package-Orm.Entity.Injection.html">Entity\Injection</a>
+						</li>
+				<li><a href="package-Orm.Entity.MetaData.html">Entity\MetaData</a>
+						</li>
+							</ul></li>
+				<li><a href="package-Orm.Mappers.html">Mappers</a>
+						<span></span>
+						<ul>
+				<li><a href="package-Orm.Mappers.Collection.html">Mappers\Collection</a>
+						<span></span>
+						<ul>
+				<li><a href="package-Orm.Mappers.Collection.Helpers.html">Mappers\Collection\Helpers</a>
+						</li>
+							</ul></li>
+				<li><a href="package-Orm.Mappers.Conventional.html">Mappers\Conventional</a>
+						</li>
+				<li><a href="package-Orm.Mappers.Exceptions.html">Mappers\Exceptions</a>
+						</li>
+				<li><a href="package-Orm.Mappers.Factory.html">Mappers\Factory</a>
+						<span></span>
+						<ul>
+				<li><a href="package-Orm.Mappers.Factory.Exceptions.html">Mappers\Factory\Exceptions</a>
+						</li>
+							</ul></li>
+				<li><a href="package-Orm.Mappers.Helpers.html">Mappers\Helpers</a>
+						</li>
+							</ul></li>
+				<li><a href="package-Orm.Relationships.html">Relationships</a>
+						<span></span>
+						<ul>
+				<li><a href="package-Orm.Relationships.Exceptions.html">Relationships\Exceptions</a>
+						</li>
+				<li><a href="package-Orm.Relationships.Mappers.html">Relationships\Mappers</a>
+						</li>
+				<li><a href="package-Orm.Relationships.MetaData.html">Relationships\MetaData</a>
+						</li>
+							</ul></li>
+				<li><a href="package-Orm.Repository.html">Repository</a>
+						<span></span>
+						<ul>
+				<li><a href="package-Orm.Repository.Events.html">Repository\Events</a>
+						<span></span>
+						<ul>
+				<li><a href="package-Orm.Repository.Events.Types.html">Repository\Events\Types</a>
+						</li>
+							</ul></li>
+				<li><a href="package-Orm.Repository.Exceptions.html">Repository\Exceptions</a>
+						</li>
+				<li><a href="package-Orm.Repository.Helpers.html">Repository\Helpers</a>
+						</li>
+							</ul></li>
+				<li><a href="package-Orm.RepositoryContainer.html">RepositoryContainer</a>
+						<span></span>
+						<ul>
+				<li><a href="package-Orm.RepositoryContainer.Exceptions.html">RepositoryContainer\Exceptions</a>
+						</li>
+							</ul></li></ul></li>
+			</ul>
+
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active"><a href="namespace-Orm.html">Orm</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Orm.AttachableEntityFragment.html">AttachableEntityFragment</a></li>
+				<li class="active"><a href="class-Orm.BaseEntityFragment.html">BaseEntityFragment</a></li>
+				<li><a href="class-Orm.EventEntityFragment.html">EventEntityFragment</a></li>
+				<li><a href="class-Orm.ValueEntityFragment.html">ValueEntityFragment</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="package-Orm.Entity.EntityFragments.html" title="Summary of Orm\Entity\EntityFragments"><span>Package</span></a>
+			</li>
+			<li>
+				<a href="namespace-Orm.html" title="Summary of Orm"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+	</div>
+
+<div id="content">
+	<h1>Class BaseEntityFragment</h1>
+
+	<div class="description">
+	
+<p>Base entity things.</p>
+
+<p>Sets multiple properties (setValues). Convert entity to array (toArray).
+Possibility to iterate (IteratorAggregate). Access to properties like to array
+(ArrayAccess). Loads MetaData - information about properties (createMetaData).
+Default from annotation <code><a href="class-Orm.AnnotationMetaData.html">Orm\AnnotationMetaData</a></code></p>
+
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+			<a href="class-Orm.Object.html">Orm\Object</a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.gif" alt="Extended by" />
+			<a href="class-Orm.EventEntityFragment.html">Orm\EventEntityFragment</a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:60px">
+			<img src="resources/inherit.gif" alt="Extended by" />
+			<a href="class-Orm.AttachableEntityFragment.html">Orm\AttachableEntityFragment</a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:90px">
+			<img src="resources/inherit.gif" alt="Extended by" />
+			<a href="class-Orm.ValueEntityFragment.html">Orm\ValueEntityFragment</a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:120px">
+			<img src="resources/inherit.gif" alt="Extended by" />
+<b>Orm\BaseEntityFragment</b>			
+			
+			
+		</dd>
+	</dl>
+
+	<div>
+		<h4>Direct known subclasses</h4>
+			<a href="class-Orm.Entity.html">Orm\Entity</a>
+	</div>
+
+
+
+
+
+
+	<div class="info">
+		<b>Abstract</b><br />
+		
+		<b>Namespace:</b> <a href="namespace-Orm.html">Orm</a><br />
+
+				<b>Package:</b>
+				<a href="package-Orm.html">Orm</a> <br />
+				<b>Subpackage:</b>
+				<a href="package-Orm.Entity.EntityFragments.html">Entity\EntityFragments</a> <br />
+				<b>Author:</b>
+				Petr Procházka<br />
+				<b>See:</b>
+				<code><code><a href="class-Orm.Entity.html">Orm\Entity</a></code></code> <br />
+		<b>Located at</b> <a href="source-class-Orm.BaseEntityFragment.html#14" title="Go to source code">Entity/EntityFragments/BaseEntityFragment.php</a><br />
+	</div>
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="toArray" id="_toArray">
+
+		<td class="right min"><code class="nowrap">
+			
+			final public 
+			array
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_toArray">#</a>
+		<code class="wrap"><a href="source-class-Orm.BaseEntityFragment.html#31" title="Go to source code">toArray</a>( integer <span class="nowrap"><var>$mode</var> = <code><a href="class-Orm.EntityToArray.html#AS_IS">Orm\EntityToArray::<b>AS_IS</b></a></code></span> )</code>
+
+		<div class="short">
+			Entity prevadi na array, je mozne nastavit co udelat z asociacemi.
+		</div>
+
+		<div class="detailed hidden">
+			
+<p>Entity prevadi na array, je mozne nastavit co udelat z asociacemi.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$mode</var></dt>
+					<dd><code>integer</code><br />EntityToArray::*</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code>array</code><br />
+				</div>
+
+
+				<h4>See</h4>
+				<div class="smallList">
+						<code><code><a href="class-Orm.EntityToArray.html">Orm\EntityToArray</a></code></code> <br />
+				</div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setValues" id="_setValues">
+
+		<td class="right min"><code class="nowrap">
+			
+			final public 
+			<code><a href="class-Orm.Entity.html">Orm\Entity</a></code>
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_setValues">#</a>
+		<code class="wrap"><a href="source-class-Orm.BaseEntityFragment.html#42" title="Go to source code">setValues</a>( array|<code><a href="class-Traversable.html">Traversable</a></code> <span class="nowrap"><var>$values</var></span> )</code>
+
+		<div class="short">
+			Nastavuje parametry. Kdyz neexistuje parametr: vola setter
+<code>set&lt;Param&gt;</code> kdyz existuje takova methoda a je public; plni
+property <code>$param</code> kdyz existuje a je public.
+		</div>
+
+		<div class="detailed hidden">
+			
+<p>Nastavuje parametry. Kdyz neexistuje parametr: vola setter
+<code>set&lt;Param&gt;</code> kdyz existuje takova methoda a je public; plni
+property <code>$param</code> kdyz existuje a je public.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$values</var></dt>
+					<dd><code>array|<code><a href="class-Traversable.html">Traversable</a></code></code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code><code><a href="class-Orm.Entity.html">Orm\Entity</a></code></code><br />$this<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="createMetaData" id="_createMetaData">
+
+		<td class="right min"><code class="nowrap">
+			
+			 public static
+			<code><a href="class-Orm.MetaData.html">Orm\MetaData</a></code>
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_createMetaData">#</a>
+		<code class="wrap"><a href="source-class-Orm.BaseEntityFragment.html#79" title="Go to source code">createMetaData</a>( string|<code><a href="class-Orm.IEntity.html">Orm\IEntity</a></code> <span class="nowrap"><var>$entityClass</var></span> )</code>
+
+		<div class="short">
+			Vytvori MetaData
+		</div>
+
+		<div class="detailed hidden">
+			
+<p>Vytvori MetaData</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$entityClass</var></dt>
+					<dd><code>string|<code><a href="class-Orm.IEntity.html">Orm\IEntity</a></code></code><br />class name or object</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code><code><a href="class-Orm.MetaData.html">Orm\MetaData</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getIterator" id="_getIterator">
+
+		<td class="right min"><code class="nowrap">
+			
+			final public 
+			<code><a href="class-ArrayIterator.html">ArrayIterator</a></code>
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_getIterator">#</a>
+		<code class="wrap"><a href="source-class-Orm.BaseEntityFragment.html#89" title="Go to source code">getIterator</a>( )</code>
+
+		<div class="short">
+			
+		</div>
+
+		<div class="detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code><code><a href="class-ArrayIterator.html">ArrayIterator</a></code></code><br />
+				</div>
+
+
+				<h4>See</h4>
+				<div class="smallList">
+						<code><code><a href="class-IteratorAggregate.html">IteratorAggregate</a></code></code> <br />
+				</div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="offsetExists" id="_offsetExists">
+
+		<td class="right min"><code class="nowrap">
+			
+			final public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_offsetExists">#</a>
+		<code class="wrap"><a href="source-class-Orm.BaseEntityFragment.html#98" title="Go to source code">offsetExists</a>( string <span class="nowrap"><var>$name</var></span> )</code>
+
+		<div class="short">
+			
+		</div>
+
+		<div class="detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code>boolean</code><br />
+				</div>
+
+
+				<h4>See</h4>
+				<div class="smallList">
+						<code><code><a href="class-ArrayAccess.html">ArrayAccess</a></code></code> <br />
+				</div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="offsetGet" id="_offsetGet">
+
+		<td class="right min"><code class="nowrap">
+			
+			final public 
+			mixed
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_offsetGet">#</a>
+		<code class="wrap"><a href="source-class-Orm.BaseEntityFragment.html#108" title="Go to source code">offsetGet</a>( string <span class="nowrap"><var>$name</var></span> )</code>
+
+		<div class="short">
+			
+		</div>
+
+		<div class="detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code>mixed</code><br />
+				</div>
+
+
+				<h4>See</h4>
+				<div class="smallList">
+						<code><code><a href="class-ArrayAccess.html">ArrayAccess</a></code></code> <br />
+				</div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="offsetSet" id="_offsetSet">
+
+		<td class="right min"><code class="nowrap">
+			
+			final public 
+			<code><a href="class-Orm.Entity.html">Orm\Entity</a></code>
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_offsetSet">#</a>
+		<code class="wrap"><a href="source-class-Orm.BaseEntityFragment.html#118" title="Go to source code">offsetSet</a>( string <span class="nowrap"><var>$name</var></span>, mixed <span class="nowrap"><var>$value</var></span> )</code>
+
+		<div class="short">
+			
+		</div>
+
+		<div class="detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$value</var></dt>
+					<dd><code>mixed</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code><code><a href="class-Orm.Entity.html">Orm\Entity</a></code></code><br />$this<br />
+				</div>
+
+
+				<h4>See</h4>
+				<div class="smallList">
+						<code><code><a href="class-ArrayAccess.html">ArrayAccess</a></code></code> <br />
+				</div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="offsetUnset" id="_offsetUnset">
+
+		<td class="right min"><code class="nowrap">
+			
+			final public 
+			
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_offsetUnset">#</a>
+		<code class="wrap"><a href="source-class-Orm.BaseEntityFragment.html#129" title="Go to source code">offsetUnset</a>( string <span class="nowrap"><var>$name</var></span> )</code>
+
+		<div class="short">
+			
+		</div>
+
+		<div class="detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+
+				<h4>Throws</h4>
+				<div class="smallList">
+					<code><code><a href="class-Orm.NotSupportedException.html">Orm\NotSupportedException</a></code></code><br />
+				</div>
+
+				<h4>See</h4>
+				<div class="smallList">
+						<code><code><a href="class-ArrayAccess.html">ArrayAccess</a></code></code> <br />
+				</div>
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+	<table class="summary methods">
+	<caption>Methods inherited from <a href="class-Orm.ValueEntityFragment.html#methods">Orm\ValueEntityFragment</a></caption>
+	<tr>
+		<td><code>
+<a href="class-Orm.ValueEntityFragment.html#___call">__call()</a>, 
+<a href="class-Orm.ValueEntityFragment.html#___callStatic">__callStatic()</a>, 
+<a href="class-Orm.ValueEntityFragment.html#___clone">__clone()</a>, 
+<a href="class-Orm.ValueEntityFragment.html#___get">__get()</a>, 
+<a href="class-Orm.ValueEntityFragment.html#___isset">__isset()</a>, 
+<a href="class-Orm.ValueEntityFragment.html#___set">__set()</a>, 
+<a href="class-Orm.ValueEntityFragment.html#_getValue">getValue()</a>, 
+<a href="class-Orm.ValueEntityFragment.html#_hasParam">hasParam()</a>, 
+<a href="class-Orm.ValueEntityFragment.html#_isChanged">isChanged()</a>, 
+<a href="class-Orm.ValueEntityFragment.html#_markAsChanged">markAsChanged()</a>, 
+<a href="class-Orm.ValueEntityFragment.html#_onAfterRemove">onAfterRemove()</a>, 
+<a href="class-Orm.ValueEntityFragment.html#_onAttach">onAttach()</a>, 
+<a href="class-Orm.ValueEntityFragment.html#_onAttachModel">onAttachModel()</a>, 
+<a href="class-Orm.ValueEntityFragment.html#_onBeforeRemove">onBeforeRemove()</a>, 
+<a href="class-Orm.ValueEntityFragment.html#_onCreate">onCreate()</a>, 
+<a href="class-Orm.ValueEntityFragment.html#_onLoad">onLoad()</a>, 
+<a href="class-Orm.ValueEntityFragment.html#_onPersist">onPersist()</a>, 
+<a href="class-Orm.ValueEntityFragment.html#_setReadOnlyValue">setReadOnlyValue()</a>, 
+<a href="class-Orm.ValueEntityFragment.html#_setValue">setValue()</a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary methods">
+	<caption>Methods inherited from <a href="class-Orm.AttachableEntityFragment.html#methods">Orm\AttachableEntityFragment</a></caption>
+	<tr>
+		<td><code>
+<a href="class-Orm.AttachableEntityFragment.html#_getModel">getModel()</a>, 
+<a href="class-Orm.AttachableEntityFragment.html#_getRepository">getRepository()</a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary methods">
+	<caption>Methods inherited from <a href="class-Orm.EventEntityFragment.html#methods">Orm\EventEntityFragment</a></caption>
+	<tr>
+		<td><code>
+<a href="class-Orm.EventEntityFragment.html#___construct">__construct()</a>, 
+<a href="class-Orm.EventEntityFragment.html#_fireEvent">fireEvent()</a>, 
+<a href="class-Orm.EventEntityFragment.html#_onAfterInsert">onAfterInsert()</a>, 
+<a href="class-Orm.EventEntityFragment.html#_onAfterPersist">onAfterPersist()</a>, 
+<a href="class-Orm.EventEntityFragment.html#_onAfterUpdate">onAfterUpdate()</a>, 
+<a href="class-Orm.EventEntityFragment.html#_onBeforeInsert">onBeforeInsert()</a>, 
+<a href="class-Orm.EventEntityFragment.html#_onBeforePersist">onBeforePersist()</a>, 
+<a href="class-Orm.EventEntityFragment.html#_onBeforeUpdate">onBeforeUpdate()</a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary methods">
+	<caption>Methods inherited from <a href="class-Orm.Object.html#methods">Orm\Object</a></caption>
+	<tr>
+		<td><code>
+<a href="class-Orm.Object.html#___unset">__unset()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		Orm API documentation generated by <a href="http://apigen.org">ApiGen</a>.
+	</div>
+</div>
+</div>
+</body>
+</html>

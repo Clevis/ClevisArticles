@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.1.0" />
+
+	<title>Class Orm\MetaDataProperty | Orm</title>
+
+	<script type="text/javascript" src="resources/combined.js?37748604"></script>
+	<script type="text/javascript" src="elementlist.js?4251123146"></script>
+	<script type="text/javascript">
+		var ApiGen = ApiGen || {};
+		ApiGen.options = {"elementDetailsCollapsed":true};
+	</script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2490775220" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+		<div id="groups">
+			<h3>Packages</h3>
+			<ul>
+				<li class="active"><a href="package-Orm.html">Orm</a>
+						<span></span>
+						<ul>
+				<li><a href="package-Orm.Common.html">Common</a>
+						<span></span>
+						<ul>
+				<li><a href="package-Orm.Common.Exceptions.html">Common\Exceptions</a>
+						</li>
+							</ul></li>
+				<li><a href="package-Orm.DI.html">DI</a>
+						<span></span>
+						<ul>
+				<li><a href="package-Orm.DI.Exceptions.html">DI\Exceptions</a>
+						</li>
+							</ul></li>
+				<li class="active"><a href="package-Orm.Entity.html">Entity</a>
+						<span></span>
+						<ul>
+				<li><a href="package-Orm.Entity.EntityFragments.html">Entity\EntityFragments</a>
+						</li>
+				<li><a href="package-Orm.Entity.Exceptions.html">Entity\Exceptions</a>
+						</li>
+				<li><a href="package-Orm.Entity.Helpers.html">Entity\Helpers</a>
+						</li>
+				<li><a href="package-Orm.Entity.Injection.html">Entity\Injection</a>
+						</li>
+				<li class="active"><a href="package-Orm.Entity.MetaData.html">Entity\MetaData</a>
+						</li>
+							</ul></li>
+				<li><a href="package-Orm.Mappers.html">Mappers</a>
+						<span></span>
+						<ul>
+				<li><a href="package-Orm.Mappers.Collection.html">Mappers\Collection</a>
+						<span></span>
+						<ul>
+				<li><a href="package-Orm.Mappers.Collection.Helpers.html">Mappers\Collection\Helpers</a>
+						</li>
+							</ul></li>
+				<li><a href="package-Orm.Mappers.Conventional.html">Mappers\Conventional</a>
+						</li>
+				<li><a href="package-Orm.Mappers.Exceptions.html">Mappers\Exceptions</a>
+						</li>
+				<li><a href="package-Orm.Mappers.Factory.html">Mappers\Factory</a>
+						<span></span>
+						<ul>
+				<li><a href="package-Orm.Mappers.Factory.Exceptions.html">Mappers\Factory\Exceptions</a>
+						</li>
+							</ul></li>
+				<li><a href="package-Orm.Mappers.Helpers.html">Mappers\Helpers</a>
+						</li>
+							</ul></li>
+				<li><a href="package-Orm.Relationships.html">Relationships</a>
+						<span></span>
+						<ul>
+				<li><a href="package-Orm.Relationships.Exceptions.html">Relationships\Exceptions</a>
+						</li>
+				<li><a href="package-Orm.Relationships.Mappers.html">Relationships\Mappers</a>
+						</li>
+				<li><a href="package-Orm.Relationships.MetaData.html">Relationships\MetaData</a>
+						</li>
+							</ul></li>
+				<li><a href="package-Orm.Repository.html">Repository</a>
+						<span></span>
+						<ul>
+				<li><a href="package-Orm.Repository.Events.html">Repository\Events</a>
+						<span></span>
+						<ul>
+				<li><a href="package-Orm.Repository.Events.Types.html">Repository\Events\Types</a>
+						</li>
+							</ul></li>
+				<li><a href="package-Orm.Repository.Exceptions.html">Repository\Exceptions</a>
+						</li>
+				<li><a href="package-Orm.Repository.Helpers.html">Repository\Helpers</a>
+						</li>
+							</ul></li>
+				<li><a href="package-Orm.RepositoryContainer.html">RepositoryContainer</a>
+						<span></span>
+						<ul>
+				<li><a href="package-Orm.RepositoryContainer.Exceptions.html">RepositoryContainer\Exceptions</a>
+						</li>
+							</ul></li></ul></li>
+			</ul>
+
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active"><a href="namespace-Orm.html">Orm</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Orm.AnnotationMetaData.html">AnnotationMetaData</a></li>
+				<li><a href="class-Orm.MetaData.html">MetaData</a></li>
+				<li class="active"><a href="class-Orm.MetaDataProperty.html">MetaDataProperty</a></li>
+			</ul>
+
+
+
+			<h3>Exceptions</h3>
+			<ul>
+				<li><a href="class-Orm.AnnotationMetaDataException.html">AnnotationMetaDataException</a></li>
+				<li><a href="class-Orm.MetaDataException.html">MetaDataException</a></li>
+				<li><a href="class-Orm.MetaDataNestingLevelException.html">MetaDataNestingLevelException</a></li>
+			</ul>
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="package-Orm.Entity.MetaData.html" title="Summary of Orm\Entity\MetaData"><span>Package</span></a>
+			</li>
+			<li>
+				<a href="namespace-Orm.html" title="Summary of Orm"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+	</div>
+
+<div id="content">
+	<h1>Class MetaDataProperty</h1>
+
+	<div class="description">
+	
+<p>Information about one property of entity.</p>
+
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+			<a href="class-Orm.Object.html">Orm\Object</a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.gif" alt="Extended by" />
+<b>Orm\MetaDataProperty</b>			
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Orm.html">Orm</a><br />
+
+				<b>Package:</b>
+				<a href="package-Orm.html">Orm</a> <br />
+				<b>Subpackage:</b>
+				<a href="package-Orm.Entity.MetaData.html">Entity\MetaData</a> <br />
+				<b>Author:</b>
+				Petr Procházka<br />
+				<b>See:</b>
+				<code><code><a href="class-Orm.MetaData.html">Orm\MetaData</a></code></code> <br />
+		<b>Located at</b> <a href="source-class-Orm.MetaDataProperty.html#13" title="Go to source code">Entity/MetaData/MetaDataProperty.php</a><br />
+	</div>
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="right min"><code class="nowrap">
+			
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#___construct">#</a>
+		<code class="wrap"><a href="source-class-Orm.MetaDataProperty.html#43" title="Go to source code">__construct</a>( <a href="class-Orm.MetaData.html"><span class="nowrap">Orm\MetaData</span></a> <span class="nowrap"><var>$meta</var></span>, string <span class="nowrap"><var>$name</var></span>, array|string <span class="nowrap"><var>$types</var></span>, integer <span class="nowrap"><var>$access</var> = <code><a href="class-Orm.MetaData.html#READWRITE">Orm\MetaData::<b>READWRITE</b></a></code></span>, string|null <span class="nowrap"><var>$since</var> = <span class="php-keyword1">NULL</span></span> )</code>
+
+		<div class="short">
+			
+		</div>
+
+		<div class="detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$meta</var></dt>
+					<dd><code><code><a href="class-Orm.MetaData.html">Orm\MetaData</a></code></code></dd>
+					<dt><var>$name</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$types</var></dt>
+					<dd><code>array|string</code></dd>
+					<dt><var>$access</var></dt>
+					<dd><code>integer</code><br />MetaData::READ MetaData::READWRITE</dd>
+					<dt><var>$since</var></dt>
+					<dd><code>string|null</code><br />internal Od jake entity tento parametr existuje.</dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getSince" id="_getSince">
+
+		<td class="right min"><code class="nowrap">
+			
+			 public 
+			string|null
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_getSince">#</a>
+		<code class="wrap"><a href="source-class-Orm.MetaDataProperty.html#63" title="Go to source code">getSince</a>( )</code>
+
+		<div class="short">
+			Pouziva se pro kontrolu napr. anotaci, jestli neni v jedne tride 2x stejnej
+parametr (coz je vetsinou chyba). Pri rucnim vytvareni MetaDat neni potreba
+vyplnovat, neni pak mozne 2x zadat stejny parametr.
+		</div>
+
+		<div class="detailed hidden">
+			
+<p>Pouziva se pro kontrolu napr. anotaci, jestli neni v jedne tride 2x stejnej
+parametr (coz je vetsinou chyba). Pri rucnim vytvareni MetaDat neni potreba
+vyplnovat, neni pak mozne 2x zadat stejny parametr.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code>string|null</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setTypes" id="_setTypes">
+
+		<td class="right min"><code class="nowrap">
+			
+			 protected 
+			<code><a href="class-Orm.MetaDataProperty.html">Orm\MetaDataProperty</a></code>
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_setTypes">#</a>
+		<code class="wrap"><a href="source-class-Orm.MetaDataProperty.html#73" title="Go to source code">setTypes</a>( array|string <span class="nowrap"><var>$types</var></span> )</code>
+
+		<div class="short">
+			Povolene typy. Pole nebo hodnoty rozdelene svislitkem |
+		</div>
+
+		<div class="detailed hidden">
+			
+<p>Povolene typy. Pole nebo hodnoty rozdelene svislitkem |</p>
+
+<pre>
+Napr.:
+string|int|float|bool|array|object
+NULL
+DateTime|JakakoliTrida
+mixed
+</pre>
+
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$types</var></dt>
+					<dd><code>array|string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code><code><a href="class-Orm.MetaDataProperty.html">Orm\MetaDataProperty</a></code></code><br />$this<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setAccess" id="_setAccess">
+
+		<td class="right min"><code class="nowrap">
+			
+			 protected 
+			<code><a href="class-Orm.MetaDataProperty.html">Orm\MetaDataProperty</a></code>
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_setAccess">#</a>
+		<code class="wrap"><a href="source-class-Orm.MetaDataProperty.html#132" title="Go to source code">setAccess</a>( integer <span class="nowrap"><var>$access</var></span>, <a href="class-Orm.MetaData.html"><span class="nowrap">Orm\MetaData</span></a> <span class="nowrap"><var>$meta</var></span> )</code>
+
+		<div class="short">
+			Jestli je parametr ke cteni nebo jen pro zapis
+		</div>
+
+		<div class="detailed hidden">
+			
+<p>Jestli je parametr ke cteni nebo jen pro zapis</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$access</var></dt>
+					<dd><code>integer</code><br />MetaData::READ|MetaData::READWRITE</dd>
+					<dt><var>$meta</var></dt>
+					<dd><code><code><a href="class-Orm.MetaData.html">Orm\MetaData</a></code></code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code><code><a href="class-Orm.MetaDataProperty.html">Orm\MetaDataProperty</a></code></code><br />$this<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setOneToOne" id="_setOneToOne">
+
+		<td class="right min"><code class="nowrap">
+			
+			 public 
+			<code><a href="class-Orm.MetaDataProperty.html">Orm\MetaDataProperty</a></code>
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_setOneToOne">#</a>
+		<code class="wrap"><a href="source-class-Orm.MetaDataProperty.html#153" title="Go to source code">setOneToOne</a>( string <span class="nowrap"><var>$repositoryName</var></span>, string|null <span class="nowrap"><var>$param</var> = <span class="php-keyword1">NULL</span></span> )</code>
+
+		<div class="short">
+			Vytvoreni vstahu z jinou entitou. V anotaci lze zapsat i aliasem 1:1 Mapper
+vetsinou uklada jako cizy klic.
+		</div>
+
+		<div class="detailed hidden">
+			
+<p>Vytvoreni vstahu z jinou entitou. V anotaci lze zapsat i aliasem 1:1 Mapper
+vetsinou uklada jako cizy klic.</p>
+
+<pre>
+* @property Foo $foo {1:1 Foos}
+</pre>
+
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$repositoryName</var></dt>
+					<dd><code>string</code><br />Nazev repository pripojene polozky</dd>
+					<dt><var>$param</var></dt>
+					<dd><code>string|null</code><br />parametr na child entitach (1:1)</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code><code><a href="class-Orm.MetaDataProperty.html">Orm\MetaDataProperty</a></code></code><br />$this<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setManyToOne" id="_setManyToOne">
+
+		<td class="right min"><code class="nowrap">
+			
+			 public 
+			<code><a href="class-Orm.MetaDataProperty.html">Orm\MetaDataProperty</a></code>
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_setManyToOne">#</a>
+		<code class="wrap"><a href="source-class-Orm.MetaDataProperty.html#180" title="Go to source code">setManyToOne</a>( string <span class="nowrap"><var>$repositoryName</var></span>, string|null <span class="nowrap"><var>$param</var> = <span class="php-keyword1">NULL</span></span> )</code>
+
+		<div class="short">
+			Vytvoreni vstahu z jinou entitou. V anotaci lze zapsat i aliasem m:1 Mapper
+vetsinou uklada jako cizy klic.
+		</div>
+
+		<div class="detailed hidden">
+			
+<p>Vytvoreni vstahu z jinou entitou. V anotaci lze zapsat i aliasem m:1 Mapper
+vetsinou uklada jako cizy klic.</p>
+
+<pre>
+* @property Foo $foo {m:1 Foos}
+</pre>
+
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$repositoryName</var></dt>
+					<dd><code>string</code><br />Nazev repository pripojene polozky</dd>
+					<dt><var>$param</var></dt>
+					<dd><code>string|null</code><br />parametr na child entitach (1:m)</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code><code><a href="class-Orm.MetaDataProperty.html">Orm\MetaDataProperty</a></code></code><br />$this<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setOneToMany" id="_setOneToMany">
+
+		<td class="right min"><code class="nowrap">
+			
+			 public 
+			<code><a href="class-Orm.MetaDataProperty.html">Orm\MetaDataProperty</a></code>
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_setOneToMany">#</a>
+		<code class="wrap"><a href="source-class-Orm.MetaDataProperty.html#242" title="Go to source code">setOneToMany</a>( string <span class="nowrap"><var>$repositoryName</var></span>, string <span class="nowrap"><var>$param</var> = <span class="php-keyword1">NULL</span></span> )</code>
+
+		<div class="short">
+			Vytvoreni vstahu z jinou entitou. V anotaci lze zapsat i aliasem 1:m Mapper
+vetsinou uklada jako cizy klic na pripojenou entitu. Obsahuje tridu ktera je
+potomkem OneToMany
+		</div>
+
+		<div class="detailed hidden">
+			
+<p>Vytvoreni vstahu z jinou entitou. V anotaci lze zapsat i aliasem 1:m Mapper
+vetsinou uklada jako cizy klic na pripojenou entitu. Obsahuje tridu ktera je
+potomkem OneToMany</p>
+
+<pre>
+* @property OneToMany $bars {1:m bars foo}
+* typ lze vynechat
+* @property $bars {1:m bars foo}
+</pre>
+
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$repositoryName</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$param</var></dt>
+					<dd><code>string</code><br />parametr na child entitach (m:1)</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code><code><a href="class-Orm.MetaDataProperty.html">Orm\MetaDataProperty</a></code></code><br />$this<br />
+				</div>
+
+
+				<h4>See</h4>
+				<div class="smallList">
+						<code><code><a href="class-Orm.OneToMany.html">Orm\OneToMany</a></code></code> <br />
+				</div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setManyToMany" id="_setManyToMany">
+
+		<td class="right min"><code class="nowrap">
+			
+			 public 
+			<code><a href="class-Orm.MetaDataProperty.html">Orm\MetaDataProperty</a></code>
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_setManyToMany">#</a>
+		<code class="wrap"><a href="source-class-Orm.MetaDataProperty.html#266" title="Go to source code">setManyToMany</a>( string <span class="nowrap"><var>$repositoryName</var></span>, string|null <span class="nowrap"><var>$param</var> = <span class="php-keyword1">NULL</span></span>, mixed <span class="nowrap"><var>$mapped</var> = <span class="php-keyword1">NULL</span></span> )</code>
+
+		<div class="short">
+			Vytvoreni vstahu z jinou entitou. V anotaci lze zapsat i aliasem m:n Mapper
+vetsinou uklada do propojovaci tabulky. Obsahuje tridu ktera je potomkem
+ManyToMany
+		</div>
+
+		<div class="detailed hidden">
+			
+<p>Vytvoreni vstahu z jinou entitou. V anotaci lze zapsat i aliasem m:n Mapper
+vetsinou uklada do propojovaci tabulky. Obsahuje tridu ktera je potomkem
+ManyToMany</p>
+
+<pre>
+* @property ManyToMany $bars {m:n bars foos}
+* typ lze vynechat
+* @property $bars {m:n bars foos}
+</pre>
+
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$repositoryName</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$param</var></dt>
+					<dd><code>string|null</code><br />parametr na child entitach (m:m)</dd>
+					<dt><var>$mapped</var></dt>
+					<dd><code>mixed</code><br />RelationshipMetaDataToMany::MAPPED_HERE|RelationshipMetaDataToMany::MAPPED_THERE|NULL</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code><code><a href="class-Orm.MetaDataProperty.html">Orm\MetaDataProperty</a></code></code><br />$this<br />
+				</div>
+
+
+				<h4>See</h4>
+				<div class="smallList">
+						<code><code><a href="class-Orm.ManyToMany.html">Orm\ManyToMany</a></code></code> <br />
+				</div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setEnum" id="_setEnum">
+
+		<td class="right min"><code class="nowrap">
+			
+			 public 
+			<code><a href="class-Orm.MetaDataProperty.html">Orm\MetaDataProperty</a></code>
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_setEnum">#</a>
+		<code class="wrap"><a href="source-class-Orm.MetaDataProperty.html#290" title="Go to source code">setEnum</a>( array <span class="nowrap"><var>$values</var></span>, string|null <span class="nowrap"><var>$original</var> = <span class="php-keyword1">NULL</span></span> )</code>
+
+		<div class="short">
+			Parametr muze byt jen jedna z techto hodnot.
+		</div>
+
+		<div class="detailed hidden">
+			
+<p>Parametr muze byt jen jedna z techto hodnot.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$values</var></dt>
+					<dd><code>array</code></dd>
+					<dt><var>$original</var></dt>
+					<dd><code>string|null</code><br />internal pouzije se pro zobrazeni v chybe (pri pouziti anotaci se pak v chybe
+zobrazuji nazvy konstant misto jejich hodnot)</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code><code><a href="class-Orm.MetaDataProperty.html">Orm\MetaDataProperty</a></code></code><br />$this<br />
+				</div>
+
+
+				<h4>See</h4>
+				<div class="smallList">
+						<code><code><a href="class-Orm.AnnotationMetaData.html#_builtParamsEnum">Orm\AnnotationMetaData::builtParamsEnum()</a></code></code> <br />
+				</div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setDefault" id="_setDefault">
+
+		<td class="right min"><code class="nowrap">
+			
+			 public 
+			<code><a href="class-Orm.MetaDataProperty.html">Orm\MetaDataProperty</a></code>
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_setDefault">#</a>
+		<code class="wrap"><a href="source-class-Orm.MetaDataProperty.html#313" title="Go to source code">setDefault</a>( mixed <span class="nowrap"><var>$value</var></span> )</code>
+
+		<div class="short">
+			Kdyz se parametr nevyplni pouzije se toto jako defaultni hodnota. Pri necem
+slozitejsim se muze vytvorit protected methoda na entite
+<code>getDefault&lt;Param&gt;</code> ktera vrati default hodnotu
+		</div>
+
+		<div class="detailed hidden">
+			
+<p>Kdyz se parametr nevyplni pouzije se toto jako defaultni hodnota. Pri necem
+slozitejsim se muze vytvorit protected methoda na entite
+<code>getDefault&lt;Param&gt;</code> ktera vrati default hodnotu</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$value</var></dt>
+					<dd><code>mixed</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code><code><a href="class-Orm.MetaDataProperty.html">Orm\MetaDataProperty</a></code></code><br />$this<br />
+				</div>
+
+
+				<h4>See</h4>
+				<div class="smallList">
+						<code><code><a href="class-Orm.AnnotationMetaData.html#_builtParamsDefault">Orm\AnnotationMetaData::builtParamsDefault()</a></code></code> <br />
+				</div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setInjection" id="_setInjection">
+
+		<td class="right min"><code class="nowrap">
+			
+			 public 
+			<code><a href="class-Orm.MetaDataProperty.html">Orm\MetaDataProperty</a></code>
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_setInjection">#</a>
+		<code class="wrap"><a href="source-class-Orm.MetaDataProperty.html#326" title="Go to source code">setInjection</a>( <code><a href="class-Orm.Callback.html">Orm\Callback</a></code>|<code><a href="class-Closure.html">Closure</a></code>|string|<code><a href="class-Orm.IEntityInjectionLoader.html">Orm\IEntityInjectionLoader</a></code>|null <span class="nowrap"><var>$factory</var> = <span class="php-keyword1">NULL</span></span> )</code>
+
+		<div class="short">
+			Inject same class around value in entity.
+		</div>
+
+		<div class="detailed hidden">
+			
+<p>Inject same class around value in entity.</p>
+
+<pre>
+<span class="php-var">$entity</span>-&gt;foo = <span
+class="php-keyword1">array</span>(<span class="php-quote">'bar'</span>); <span
+class="php-comment">// call ArrayInjection::setInjectedValue(array('bar'))</span>
+<span
+class="php-var">$entity</span>-&gt;foo <span
+class="php-keyword1">implements</span> ArrayInjection;
+
+<span
+class="php-var">$repo</span>-&gt;persist(<span
+class="php-var">$entity</span>) <span
+class="php-comment">// call ArrayInjection::getInjectedValue()</span>
+</pre>
+
+<p>Type must by class implements IEntityInjection.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$factory</var></dt>
+					<dd><code><code><a href="class-Orm.Callback.html">Orm\Callback</a></code>|<code><a href="class-Closure.html">Closure</a></code>|string|<code><a href="class-Orm.IEntityInjectionLoader.html">Orm\IEntityInjectionLoader</a></code>|null</code><br />null mean load from IEntityInjectionStaticLoader which is specify in type</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code><code><a href="class-Orm.MetaDataProperty.html">Orm\MetaDataProperty</a></code></code><br />$this<br />
+				</div>
+
+
+				<h4>See</h4>
+				<div class="smallList">
+						<code><code><a href="class-Orm.AnnotationMetaData.html#_builtParamsInjection">Orm\AnnotationMetaData::builtParamsInjection()</a></code></code> <br />
+				</div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="toArray" id="_toArray">
+
+		<td class="right min"><code class="nowrap">
+			
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_toArray">#</a>
+		<code class="wrap"><a href="source-class-Orm.MetaDataProperty.html#397" title="Go to source code">toArray</a>( )</code>
+
+		<div class="short">
+			
+		</div>
+
+		<div class="detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code>array</code><br />internal format<br />
+				</div>
+
+
+				<h4>See</h4>
+				<div class="smallList">
+						<code><code><a href="class-Orm.MetaData.html#_toArray">Orm\MetaData::toArray()</a></code></code> <br />
+				</div>
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+	<table class="summary methods">
+	<caption>Methods inherited from <a href="class-Orm.Object.html#methods">Orm\Object</a></caption>
+	<tr>
+		<td><code>
+<a href="class-Orm.Object.html#___call">__call()</a>, 
+<a href="class-Orm.Object.html#___callStatic">__callStatic()</a>, 
+<a href="class-Orm.Object.html#___get">__get()</a>, 
+<a href="class-Orm.Object.html#___isset">__isset()</a>, 
+<a href="class-Orm.Object.html#___set">__set()</a>, 
+<a href="class-Orm.Object.html#___unset">__unset()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		Orm API documentation generated by <a href="http://apigen.org">ApiGen</a>.
+	</div>
+</div>
+</div>
+</body>
+</html>

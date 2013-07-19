@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.1.0" />
+
+	<title>Class ReflectionProperty | Orm</title>
+
+	<script type="text/javascript" src="resources/combined.js?37748604"></script>
+	<script type="text/javascript" src="elementlist.js?4251123146"></script>
+	<script type="text/javascript">
+		var ApiGen = ApiGen || {};
+		ApiGen.options = {"elementDetailsCollapsed":true};
+	</script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2490775220" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+		<div id="groups">
+			<h3>Packages</h3>
+			<ul>
+				<li><a href="package-Orm.html">Orm</a>
+						<span></span>
+						<ul>
+				<li><a href="package-Orm.Common.html">Common</a>
+						<span></span>
+						<ul>
+				<li><a href="package-Orm.Common.Exceptions.html">Common\Exceptions</a>
+						</li>
+							</ul></li>
+				<li><a href="package-Orm.DI.html">DI</a>
+						<span></span>
+						<ul>
+				<li><a href="package-Orm.DI.Exceptions.html">DI\Exceptions</a>
+						</li>
+							</ul></li>
+				<li><a href="package-Orm.Entity.html">Entity</a>
+						<span></span>
+						<ul>
+				<li><a href="package-Orm.Entity.EntityFragments.html">Entity\EntityFragments</a>
+						</li>
+				<li><a href="package-Orm.Entity.Exceptions.html">Entity\Exceptions</a>
+						</li>
+				<li><a href="package-Orm.Entity.Helpers.html">Entity\Helpers</a>
+						</li>
+				<li><a href="package-Orm.Entity.Injection.html">Entity\Injection</a>
+						</li>
+				<li><a href="package-Orm.Entity.MetaData.html">Entity\MetaData</a>
+						</li>
+							</ul></li>
+				<li><a href="package-Orm.Mappers.html">Mappers</a>
+						<span></span>
+						<ul>
+				<li><a href="package-Orm.Mappers.Collection.html">Mappers\Collection</a>
+						<span></span>
+						<ul>
+				<li><a href="package-Orm.Mappers.Collection.Helpers.html">Mappers\Collection\Helpers</a>
+						</li>
+							</ul></li>
+				<li><a href="package-Orm.Mappers.Conventional.html">Mappers\Conventional</a>
+						</li>
+				<li><a href="package-Orm.Mappers.Exceptions.html">Mappers\Exceptions</a>
+						</li>
+				<li><a href="package-Orm.Mappers.Factory.html">Mappers\Factory</a>
+						<span></span>
+						<ul>
+				<li><a href="package-Orm.Mappers.Factory.Exceptions.html">Mappers\Factory\Exceptions</a>
+						</li>
+							</ul></li>
+				<li><a href="package-Orm.Mappers.Helpers.html">Mappers\Helpers</a>
+						</li>
+							</ul></li>
+				<li><a href="package-Orm.Relationships.html">Relationships</a>
+						<span></span>
+						<ul>
+				<li><a href="package-Orm.Relationships.Exceptions.html">Relationships\Exceptions</a>
+						</li>
+				<li><a href="package-Orm.Relationships.Mappers.html">Relationships\Mappers</a>
+						</li>
+				<li><a href="package-Orm.Relationships.MetaData.html">Relationships\MetaData</a>
+						</li>
+							</ul></li>
+				<li><a href="package-Orm.Repository.html">Repository</a>
+						<span></span>
+						<ul>
+				<li><a href="package-Orm.Repository.Events.html">Repository\Events</a>
+						<span></span>
+						<ul>
+				<li><a href="package-Orm.Repository.Events.Types.html">Repository\Events\Types</a>
+						</li>
+							</ul></li>
+				<li><a href="package-Orm.Repository.Exceptions.html">Repository\Exceptions</a>
+						</li>
+				<li><a href="package-Orm.Repository.Helpers.html">Repository\Helpers</a>
+						</li>
+							</ul></li>
+				<li><a href="package-Orm.RepositoryContainer.html">RepositoryContainer</a>
+						<span></span>
+						<ul>
+				<li><a href="package-Orm.RepositoryContainer.Exceptions.html">RepositoryContainer\Exceptions</a>
+						</li>
+							</ul></li></ul></li>
+			</ul>
+
+			<h3>Namespaces</h3>
+			<ul>
+				<li><a href="namespace-Orm.html">Orm</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-ArrayIterator.html">ArrayIterator</a></li>
+				<li><a href="class-Closure.html">Closure</a></li>
+				<li><a href="class-DateTime.html">DateTime</a></li>
+				<li><a href="class-IteratorIterator.html">IteratorIterator</a></li>
+				<li><a href="class-ReflectionClass.html">ReflectionClass</a></li>
+				<li><a href="class-ReflectionFunctionAbstract.html">ReflectionFunctionAbstract</a></li>
+				<li><a href="class-ReflectionMethod.html">ReflectionMethod</a></li>
+				<li class="active"><a href="class-ReflectionProperty.html">ReflectionProperty</a></li>
+				<li><a href="class-stdClass.html">stdClass</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-ArrayAccess.html">ArrayAccess</a></li>
+				<li><a href="class-Countable.html">Countable</a></li>
+				<li><a href="class-Iterator.html">Iterator</a></li>
+				<li><a href="class-IteratorAggregate.html">IteratorAggregate</a></li>
+				<li><a href="class-OuterIterator.html">OuterIterator</a></li>
+				<li><a href="class-Reflector.html">Reflector</a></li>
+				<li><a href="class-SeekableIterator.html">SeekableIterator</a></li>
+				<li><a href="class-Serializable.html">Serializable</a></li>
+				<li><a href="class-Traversable.html">Traversable</a></li>
+			</ul>
+
+
+			<h3>Exceptions</h3>
+			<ul>
+				<li><a href="class-Exception.html">Exception</a></li>
+				<li><a href="class-InvalidArgumentException.html">InvalidArgumentException</a></li>
+				<li><a href="class-LogicException.html">LogicException</a></li>
+				<li><a href="class-RuntimeException.html">RuntimeException</a></li>
+			</ul>
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="package-PHP.html" title="Summary of PHP"><span>Package</span></a>
+			</li>
+			<li>
+				<a href="namespace-PHP.html" title="Summary of PHP"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+	</div>
+
+<div id="content">
+	<h1>Class ReflectionProperty</h1>
+
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+<b>ReflectionProperty</b>			
+			 implements 
+				<a href="class-Reflector.html">Reflector</a>
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+	<div class="info">
+		
+		<b>PHP Extension:</b> <a href="http://php.net/manual/book.reflection.php" title="Go to PHP documentation">Reflection</a><br />
+		
+
+		<b>Documented at</b> <a href="http://php.net/manual/class.reflectionproperty.php" title="Go to PHP documentation">php.net</a><br />
+	</div>
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="export" id="_export">
+
+		<td class="right min"><code class="nowrap">
+			
+			 public static
+			
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_export">#</a>
+		<code class="wrap"><a href="http://php.net/manual/reflectionproperty.export.php" title="Go to PHP documentation">export</a>( <span class="nowrap"><var>$class</var></span>, <span class="nowrap"><var>$name</var></span>, <span class="nowrap"><var>$return</var></span> )</code>
+
+		<div class="short">
+			
+		</div>
+
+		<div class="detailed hidden">
+			
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="right min"><code class="nowrap">
+			
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#___construct">#</a>
+		<code class="wrap"><a href="http://php.net/manual/reflectionproperty.construct.php" title="Go to PHP documentation">__construct</a>( <span class="nowrap"><var>$class</var></span>, <span class="nowrap"><var>$name</var></span> )</code>
+
+		<div class="short">
+			
+		</div>
+
+		<div class="detailed hidden">
+			
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__toString" id="___toString">
+
+		<td class="right min"><code class="nowrap">
+			
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#___toString">#</a>
+		<code class="wrap"><a href="http://php.net/manual/reflectionproperty.tostring.php" title="Go to PHP documentation">__toString</a>( )</code>
+
+		<div class="short">
+			
+		</div>
+
+		<div class="detailed hidden">
+			
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getName" id="_getName">
+
+		<td class="right min"><code class="nowrap">
+			
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_getName">#</a>
+		<code class="wrap"><a href="http://php.net/manual/reflectionproperty.getname.php" title="Go to PHP documentation">getName</a>( )</code>
+
+		<div class="short">
+			
+		</div>
+
+		<div class="detailed hidden">
+			
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getValue" id="_getValue">
+
+		<td class="right min"><code class="nowrap">
+			
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_getValue">#</a>
+		<code class="wrap"><a href="http://php.net/manual/reflectionproperty.getvalue.php" title="Go to PHP documentation">getValue</a>( <span class="nowrap"><var>$object</var></span> )</code>
+
+		<div class="short">
+			
+		</div>
+
+		<div class="detailed hidden">
+			
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setValue" id="_setValue">
+
+		<td class="right min"><code class="nowrap">
+			
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_setValue">#</a>
+		<code class="wrap"><a href="http://php.net/manual/reflectionproperty.setvalue.php" title="Go to PHP documentation">setValue</a>( <span class="nowrap"><var>$object</var></span>, <span class="nowrap"><var>$value</var></span> )</code>
+
+		<div class="short">
+			
+		</div>
+
+		<div class="detailed hidden">
+			
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isPublic" id="_isPublic">
+
+		<td class="right min"><code class="nowrap">
+			
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_isPublic">#</a>
+		<code class="wrap"><a href="http://php.net/manual/reflectionproperty.ispublic.php" title="Go to PHP documentation">isPublic</a>( )</code>
+
+		<div class="short">
+			
+		</div>
+
+		<div class="detailed hidden">
+			
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isPrivate" id="_isPrivate">
+
+		<td class="right min"><code class="nowrap">
+			
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_isPrivate">#</a>
+		<code class="wrap"><a href="http://php.net/manual/reflectionproperty.isprivate.php" title="Go to PHP documentation">isPrivate</a>( )</code>
+
+		<div class="short">
+			
+		</div>
+
+		<div class="detailed hidden">
+			
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isProtected" id="_isProtected">
+
+		<td class="right min"><code class="nowrap">
+			
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_isProtected">#</a>
+		<code class="wrap"><a href="http://php.net/manual/reflectionproperty.isprotected.php" title="Go to PHP documentation">isProtected</a>( )</code>
+
+		<div class="short">
+			
+		</div>
+
+		<div class="detailed hidden">
+			
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isStatic" id="_isStatic">
+
+		<td class="right min"><code class="nowrap">
+			
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_isStatic">#</a>
+		<code class="wrap"><a href="http://php.net/manual/reflectionproperty.isstatic.php" title="Go to PHP documentation">isStatic</a>( )</code>
+
+		<div class="short">
+			
+		</div>
+
+		<div class="detailed hidden">
+			
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isDefault" id="_isDefault">
+
+		<td class="right min"><code class="nowrap">
+			
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_isDefault">#</a>
+		<code class="wrap"><a href="http://php.net/manual/reflectionproperty.isdefault.php" title="Go to PHP documentation">isDefault</a>( )</code>
+
+		<div class="short">
+			
+		</div>
+
+		<div class="detailed hidden">
+			
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getModifiers" id="_getModifiers">
+
+		<td class="right min"><code class="nowrap">
+			
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_getModifiers">#</a>
+		<code class="wrap"><a href="http://php.net/manual/reflectionproperty.getmodifiers.php" title="Go to PHP documentation">getModifiers</a>( )</code>
+
+		<div class="short">
+			
+		</div>
+
+		<div class="detailed hidden">
+			
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getDeclaringClass" id="_getDeclaringClass">
+
+		<td class="right min"><code class="nowrap">
+			
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_getDeclaringClass">#</a>
+		<code class="wrap"><a href="http://php.net/manual/reflectionproperty.getdeclaringclass.php" title="Go to PHP documentation">getDeclaringClass</a>( )</code>
+
+		<div class="short">
+			
+		</div>
+
+		<div class="detailed hidden">
+			
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getDocComment" id="_getDocComment">
+
+		<td class="right min"><code class="nowrap">
+			
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_getDocComment">#</a>
+		<code class="wrap"><a href="http://php.net/manual/reflectionproperty.getdoccomment.php" title="Go to PHP documentation">getDocComment</a>( )</code>
+
+		<div class="short">
+			
+		</div>
+
+		<div class="detailed hidden">
+			
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setAccessible" id="_setAccessible">
+
+		<td class="right min"><code class="nowrap">
+			
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_setAccessible">#</a>
+		<code class="wrap"><a href="http://php.net/manual/reflectionproperty.setaccessible.php" title="Go to PHP documentation">setAccessible</a>( <span class="nowrap"><var>$visible</var></span> )</code>
+
+		<div class="short">
+			
+		</div>
+
+		<div class="detailed hidden">
+			
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+	<table class="summary" id="constants">
+	<caption>Constants summary</caption>
+	<tr data-order="IS_STATIC" id="IS_STATIC">
+
+		<td class="right min"><code class="nowrap">
+			
+			integer
+		</code></td>
+		<td class="min"><code>
+				<a href="http://php.net/manual/class.reflectionproperty.php#reflectionproperty.constants.is-static" title="Go to PHP documentation"><b>IS_STATIC</b></a>
+		</code></td>
+		<td><code class="wrap"><span class="php-num">1</span></code></td>
+		<td><div class="position">
+			<a href="#IS_STATIC" class="anchor">#</a>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="IS_PUBLIC" id="IS_PUBLIC">
+
+		<td class="right min"><code class="nowrap">
+			
+			integer
+		</code></td>
+		<td class="min"><code>
+				<a href="http://php.net/manual/class.reflectionproperty.php#reflectionproperty.constants.is-public" title="Go to PHP documentation"><b>IS_PUBLIC</b></a>
+		</code></td>
+		<td><code class="wrap"><span class="php-num">256</span></code></td>
+		<td><div class="position">
+			<a href="#IS_PUBLIC" class="anchor">#</a>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="IS_PROTECTED" id="IS_PROTECTED">
+
+		<td class="right min"><code class="nowrap">
+			
+			integer
+		</code></td>
+		<td class="min"><code>
+				<a href="http://php.net/manual/class.reflectionproperty.php#reflectionproperty.constants.is-protected" title="Go to PHP documentation"><b>IS_PROTECTED</b></a>
+		</code></td>
+		<td><code class="wrap"><span class="php-num">512</span></code></td>
+		<td><div class="position">
+			<a href="#IS_PROTECTED" class="anchor">#</a>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="IS_PRIVATE" id="IS_PRIVATE">
+
+		<td class="right min"><code class="nowrap">
+			
+			integer
+		</code></td>
+		<td class="min"><code>
+				<a href="http://php.net/manual/class.reflectionproperty.php#reflectionproperty.constants.is-private" title="Go to PHP documentation"><b>IS_PRIVATE</b></a>
+		</code></td>
+		<td><code class="wrap"><span class="php-num">1024</span></code></td>
+		<td><div class="position">
+			<a href="#IS_PRIVATE" class="anchor">#</a>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="name" id="$name">
+
+		<td class="right min"><code class="nowrap">
+			
+			public 
+			string
+		</code></td>
+
+		<td class="min">
+				<a href="http://php.net/manual/class.reflectionproperty.php#reflectionproperty.props.name" title="Go to PHP documentation"><var>$name</var></a>
+		</td>
+		<td><code class="wrap"><span class="php-quote">''</span></code></td>
+		<td><div class="position">
+			<a href="#$name" class="anchor">#</a>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="class" id="$class">
+
+		<td class="right min"><code class="nowrap">
+			
+			public 
+			string
+		</code></td>
+
+		<td class="min">
+				<a href="http://php.net/manual/class.reflectionproperty.php#reflectionproperty.props.class" title="Go to PHP documentation"><var>$class</var></a>
+		</td>
+		<td><code class="wrap"><span class="php-quote">''</span></code></td>
+		<td><div class="position">
+			<a href="#$class" class="anchor">#</a>
+
+			<div class="short">
+				
+			</div>
+
+			<div class="detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+</div>
+
+	<div id="footer">
+		Orm API documentation generated by <a href="http://apigen.org">ApiGen</a>.
+	</div>
+</div>
+</div>
+</body>
+</html>

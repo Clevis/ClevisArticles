@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.1.0" />
+
+	<title>Class Orm\ArrayMapper | Orm</title>
+
+	<script type="text/javascript" src="resources/combined.js?37748604"></script>
+	<script type="text/javascript" src="elementlist.js?4251123146"></script>
+	<script type="text/javascript">
+		var ApiGen = ApiGen || {};
+		ApiGen.options = {"elementDetailsCollapsed":true};
+	</script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2490775220" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+		<div id="groups">
+			<h3>Packages</h3>
+			<ul>
+				<li class="active"><a href="package-Orm.html">Orm</a>
+						<span></span>
+						<ul>
+				<li><a href="package-Orm.Common.html">Common</a>
+						<span></span>
+						<ul>
+				<li><a href="package-Orm.Common.Exceptions.html">Common\Exceptions</a>
+						</li>
+							</ul></li>
+				<li><a href="package-Orm.DI.html">DI</a>
+						<span></span>
+						<ul>
+				<li><a href="package-Orm.DI.Exceptions.html">DI\Exceptions</a>
+						</li>
+							</ul></li>
+				<li><a href="package-Orm.Entity.html">Entity</a>
+						<span></span>
+						<ul>
+				<li><a href="package-Orm.Entity.EntityFragments.html">Entity\EntityFragments</a>
+						</li>
+				<li><a href="package-Orm.Entity.Exceptions.html">Entity\Exceptions</a>
+						</li>
+				<li><a href="package-Orm.Entity.Helpers.html">Entity\Helpers</a>
+						</li>
+				<li><a href="package-Orm.Entity.Injection.html">Entity\Injection</a>
+						</li>
+				<li><a href="package-Orm.Entity.MetaData.html">Entity\MetaData</a>
+						</li>
+							</ul></li>
+				<li class="active"><a href="package-Orm.Mappers.html">Mappers</a>
+						<span></span>
+						<ul>
+				<li><a href="package-Orm.Mappers.Collection.html">Mappers\Collection</a>
+						<span></span>
+						<ul>
+				<li><a href="package-Orm.Mappers.Collection.Helpers.html">Mappers\Collection\Helpers</a>
+						</li>
+							</ul></li>
+				<li><a href="package-Orm.Mappers.Conventional.html">Mappers\Conventional</a>
+						</li>
+				<li><a href="package-Orm.Mappers.Exceptions.html">Mappers\Exceptions</a>
+						</li>
+				<li><a href="package-Orm.Mappers.Factory.html">Mappers\Factory</a>
+						<span></span>
+						<ul>
+				<li><a href="package-Orm.Mappers.Factory.Exceptions.html">Mappers\Factory\Exceptions</a>
+						</li>
+							</ul></li>
+				<li><a href="package-Orm.Mappers.Helpers.html">Mappers\Helpers</a>
+						</li>
+							</ul></li>
+				<li><a href="package-Orm.Relationships.html">Relationships</a>
+						<span></span>
+						<ul>
+				<li><a href="package-Orm.Relationships.Exceptions.html">Relationships\Exceptions</a>
+						</li>
+				<li><a href="package-Orm.Relationships.Mappers.html">Relationships\Mappers</a>
+						</li>
+				<li><a href="package-Orm.Relationships.MetaData.html">Relationships\MetaData</a>
+						</li>
+							</ul></li>
+				<li><a href="package-Orm.Repository.html">Repository</a>
+						<span></span>
+						<ul>
+				<li><a href="package-Orm.Repository.Events.html">Repository\Events</a>
+						<span></span>
+						<ul>
+				<li><a href="package-Orm.Repository.Events.Types.html">Repository\Events\Types</a>
+						</li>
+							</ul></li>
+				<li><a href="package-Orm.Repository.Exceptions.html">Repository\Exceptions</a>
+						</li>
+				<li><a href="package-Orm.Repository.Helpers.html">Repository\Helpers</a>
+						</li>
+							</ul></li>
+				<li><a href="package-Orm.RepositoryContainer.html">RepositoryContainer</a>
+						<span></span>
+						<ul>
+				<li><a href="package-Orm.RepositoryContainer.Exceptions.html">RepositoryContainer\Exceptions</a>
+						</li>
+							</ul></li></ul></li>
+			</ul>
+
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active"><a href="namespace-Orm.html">Orm</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-Orm.ArrayMapper.html">ArrayMapper</a></li>
+				<li><a href="class-Orm.DibiMapper.html">DibiMapper</a></li>
+				<li><a href="class-Orm.FileMapper.html">FileMapper</a></li>
+				<li><a href="class-Orm.Mapper.html">Mapper</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-Orm.IMapper.html">IMapper</a></li>
+			</ul>
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="package-Orm.Mappers.html" title="Summary of Orm\Mappers"><span>Package</span></a>
+			</li>
+			<li>
+				<a href="namespace-Orm.html" title="Summary of Orm"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+	</div>
+
+<div id="content">
+	<h1>Class ArrayMapper</h1>
+
+	<div class="description">
+	
+<p>Provides mapping between repository and storage. All entities stored in one
+array.</p>
+
+	</div>
+
+	<dl class="tree">
+		<dd style="padding-left:0px">
+			<a href="class-Orm.Object.html">Orm\Object</a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.gif" alt="Extended by" />
+			<a href="class-Orm.Mapper.html">Orm\Mapper</a>
+			
+			 implements 
+				<a href="class-Orm.IMapper.html">Orm\IMapper</a>
+			
+			
+		</dd>
+		<dd style="padding-left:60px">
+			<img src="resources/inherit.gif" alt="Extended by" />
+<b>Orm\ArrayMapper</b>			
+			
+			
+		</dd>
+	</dl>
+
+	<div>
+		<h4>Direct known subclasses</h4>
+			<a href="class-Orm.FileMapper.html">Orm\FileMapper</a>
+	</div>
+
+
+
+
+
+
+	<div class="info">
+		<b>Abstract</b><br />
+		
+		<b>Namespace:</b> <a href="namespace-Orm.html">Orm</a><br />
+
+				<b>Package:</b>
+				<a href="package-Orm.html">Orm</a> <br />
+				<b>Subpackage:</b>
+				<a href="package-Orm.Mappers.html">Mappers</a> <br />
+				<b>Author:</b>
+				Petr Procházka<br />
+				<b>See:</b>
+				<code><code><a href="class-Orm.ArrayMapper.html#_loadData">Orm\ArrayMapper::loadData()</a></code></code> <br />
+				<b>See:</b>
+				<code><code><a href="class-Orm.ArrayMapper.html#_saveData">Orm\ArrayMapper::saveData()</a></code></code> <br />
+		<b>Located at</b> <a href="source-class-Orm.ArrayMapper.html#14" title="Go to source code">Mappers/ArrayMapper.php</a><br />
+	</div>
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="findAll" id="_findAll">
+
+		<td class="right min"><code class="nowrap">
+			
+			 public 
+			<code><a href="class-Orm.IEntityCollection.html">Orm\IEntityCollection</a></code>
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_findAll">#</a>
+		<code class="wrap"><a href="source-class-Orm.ArrayMapper.html#33" title="Go to source code">findAll</a>( )</code>
+
+		<div class="short">
+			Vsechny entity. Musi vratit skutecne vsechny entity. Zadna jina metoda nesmi
+vratit nejakou entitu kterou by nevratila tato.
+		</div>
+
+		<div class="detailed hidden">
+			
+<p>Vsechny entity. Musi vratit skutecne vsechny entity. Zadna jina metoda nesmi
+vratit nejakou entitu kterou by nevratila tato.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code><code><a href="class-Orm.IEntityCollection.html">Orm\IEntityCollection</a></code></code><br />
+				</div>
+
+
+
+				<h4>Implementation of</h4>
+				<div class="smallList"><code><a href="class-Orm.IMapper.html#_findAll">Orm\IMapper::findAll</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getById" id="_getById">
+
+		<td class="right min"><code class="nowrap">
+			
+			 public 
+			<code><a href="class-Orm.IEntity.html">Orm\IEntity</a></code>|null
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_getById">#</a>
+		<code class="wrap"><a href="source-class-Orm.ArrayMapper.html#45" title="Go to source code">getById</a>( scalar <span class="nowrap"><var>$id</var></span> )</code>
+
+		<div class="short">
+			
+		</div>
+
+		<div class="detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$id</var></dt>
+					<dd><code>scalar</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code><code><a href="class-Orm.IEntity.html">Orm\IEntity</a></code>|null</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="persist" id="_persist">
+
+		<td class="right min"><code class="nowrap">
+			
+			 public 
+			scalar
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_persist">#</a>
+		<code class="wrap"><a href="source-class-Orm.ArrayMapper.html#57" title="Go to source code">persist</a>( <a href="class-Orm.IEntity.html"><span class="nowrap">Orm\IEntity</span></a> <span class="nowrap"><var>$entity</var></span> )</code>
+
+		<div class="short">
+			
+		</div>
+
+		<div class="detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$entity</var></dt>
+					<dd><code><code><a href="class-Orm.IEntity.html">Orm\IEntity</a></code></code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code>scalar</code><br />id<br />
+				</div>
+
+
+				<h4>See</h4>
+				<div class="smallList">
+						<code><code><a href="class-Orm.IRepository.html#_persist">Orm\IRepository::persist()</a></code></code> <br />
+				</div>
+
+				<h4>Implementation of</h4>
+				<div class="smallList"><code><a href="class-Orm.IMapper.html#_persist">Orm\IMapper::persist</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="remove" id="_remove">
+
+		<td class="right min"><code class="nowrap">
+			
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_remove">#</a>
+		<code class="wrap"><a href="source-class-Orm.ArrayMapper.html#88" title="Go to source code">remove</a>( <a href="class-Orm.IEntity.html"><span class="nowrap">Orm\IEntity</span></a> <span class="nowrap"><var>$entity</var></span> )</code>
+
+		<div class="short">
+			
+		</div>
+
+		<div class="detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$entity</var></dt>
+					<dd><code><code><a href="class-Orm.IEntity.html">Orm\IEntity</a></code></code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code>boolean</code><br />
+				</div>
+
+
+				<h4>See</h4>
+				<div class="smallList">
+						<code><code><a href="class-Orm.IRepository.html#_remove">Orm\IRepository::remove()</a></code></code> <br />
+				</div>
+
+				<h4>Implementation of</h4>
+				<div class="smallList"><code><a href="class-Orm.IMapper.html#_remove">Orm\IMapper::remove</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="flush" id="_flush">
+
+		<td class="right min"><code class="nowrap">
+			
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_flush">#</a>
+		<code class="wrap"><a href="source-class-Orm.ArrayMapper.html#101" title="Go to source code">flush</a>( )</code>
+
+		<div class="short">
+			
+		</div>
+
+		<div class="detailed hidden">
+			
+
+
+
+
+
+				<h4>See</h4>
+				<div class="smallList">
+						<code><code><a href="class-Orm.IRepository.html#_flush">Orm\IRepository::flush()</a></code></code> <br />
+				</div>
+
+				<h4>Implementation of</h4>
+				<div class="smallList"><code><a href="class-Orm.IMapper.html#_flush">Orm\IMapper::flush</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="rollback" id="_rollback">
+
+		<td class="right min"><code class="nowrap">
+			
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_rollback">#</a>
+		<code class="wrap"><a href="source-class-Orm.ArrayMapper.html#183" title="Go to source code">rollback</a>( )</code>
+
+		<div class="short">
+			
+		</div>
+
+		<div class="detailed hidden">
+			
+
+
+
+
+
+				<h4>See</h4>
+				<div class="smallList">
+						<code><code><a href="class-Orm.IRepository.html#_clean">Orm\IRepository::clean()</a></code></code> <br />
+				</div>
+
+				<h4>Implementation of</h4>
+				<div class="smallList"><code><a href="class-Orm.IMapper.html#_rollback">Orm\IMapper::rollback</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="createManyToManyMapper" id="_createManyToManyMapper">
+
+		<td class="right min"><code class="nowrap">
+			
+			 public 
+			<code><a href="class-Orm.IManyToManyMapper.html">Orm\IManyToManyMapper</a></code>
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_createManyToManyMapper">#</a>
+		<code class="wrap"><a href="source-class-Orm.ArrayMapper.html#193" title="Go to source code">createManyToManyMapper</a>( string <span class="nowrap"><var>$param</var></span>, <a href="class-Orm.IRepository.html"><span class="nowrap">Orm\IRepository</span></a> <span class="nowrap"><var>$targetRepository</var></span>, string <span class="nowrap"><var>$targetParam</var></span> )</code>
+
+		<div class="short">
+			Vytvori mapperu pro m:m asociaci
+		</div>
+
+		<div class="detailed hidden">
+			
+<p>Vytvori mapperu pro m:m asociaci</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$param</var></dt>
+					<dd><code>string</code><br />Nazev parametru na entite ktera patri repository tohodle mapperu</dd>
+					<dt><var>$targetRepository</var></dt>
+					<dd><code><code><a href="class-Orm.IRepository.html">Orm\IRepository</a></code></code><br />Repository na kterou asociace ukazuje</dd>
+					<dt><var>$targetParam</var></dt>
+					<dd><code>string</code><br />Parametr na druhe strane kam asociace ukazuje</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code><code><a href="class-Orm.IManyToManyMapper.html">Orm\IManyToManyMapper</a></code></code><br />
+				</div>
+
+
+				<h4>See</h4>
+				<div class="smallList">
+						<code><code><a href="class-Orm.ManyToMany.html#_getMapper">Orm\ManyToMany::getMapper()</a></code></code> <br />
+				</div>
+
+				<h4>Implementation of</h4>
+				<div class="smallList"><code><a href="class-Orm.IMapper.html#_createManyToManyMapper">Orm\IMapper::createManyToManyMapper</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getConventional" id="_getConventional">
+
+		<td class="right min"><code class="nowrap">
+			
+			final public 
+			<code><a href="class-Orm.IConventional.html">Orm\IConventional</a></code>
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_getConventional">#</a>
+		<code class="wrap"><a href="source-class-Orm.ArrayMapper.html#206" title="Go to source code">getConventional</a>( )</code>
+
+		<div class="short">
+			
+		</div>
+
+		<div class="detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code><code><a href="class-Orm.IConventional.html">Orm\IConventional</a></code></code><br />
+				</div>
+
+
+				<h4>See</h4>
+				<div class="smallList">
+						<code><code><a href="class-Orm.Mapper.html#_createConventional">Orm\Mapper::createConventional()</a></code></code> <br />
+				</div>
+
+				<h4>Implementation of</h4>
+				<div class="smallList"><code><a href="class-Orm.IMapper.html#_getConventional">Orm\IMapper::getConventional</a></code></div>
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="loadData" id="_loadData">
+
+		<td class="right min"><code class="nowrap">
+			
+			 protected 
+			array
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_loadData">#</a>
+		<code class="wrap"><a href="source-class-Orm.ArrayMapper.html#215" title="Go to source code">loadData</a>( )</code>
+
+		<div class="short">
+			Load data from storage &lt;code&gt; return array( array('id' =&gt; 1),
+array('id' =&gt; 2), ); &lt;/code&gt;
+		</div>
+
+		<div class="detailed hidden">
+			
+<p>Load data from storage</p>
+
+<pre>
+<span class="php-keyword1">return</span> <span
+class="php-keyword1">array</span>(
+        <span
+class="php-keyword1">array</span>(<span
+class="php-quote">'id'</span> =&gt; <span
+class="php-num">1</span>),
+        <span class="php-keyword1">array</span>(<span
+class="php-quote">'id'</span> =&gt; <span class="php-num">2</span>),
+);
+</pre>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code>array</code><br />of array<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="saveData" id="_saveData">
+
+		<td class="right min"><code class="nowrap">
+			
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_saveData">#</a>
+		<code class="wrap"><a href="source-class-Orm.ArrayMapper.html#230" title="Go to source code">saveData</a>( array <span class="nowrap"><var>$data</var></span> )</code>
+
+		<div class="short">
+			Save data to storage
+		</div>
+
+		<div class="detailed hidden">
+			
+<p>Save data to storage</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$data</var></dt>
+					<dd><code>array</code><br />id =&gt; array</dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getData" id="_getData">
+
+		<td class="right min"><code class="nowrap">
+			
+			final protected 
+			array
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_getData">#</a>
+		<code class="wrap"><a href="source-class-Orm.ArrayMapper.html#240" title="Go to source code">getData</a>( )</code>
+
+		<div class="short">
+			Vrati / nacte vsechny entity
+		</div>
+
+		<div class="detailed hidden">
+			
+<p>Vrati / nacte vsechny entity</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code>array</code><br />id =&gt; IEntity<br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="createCollectionClass" id="_createCollectionClass">
+
+		<td class="right min"><code class="nowrap">
+			
+			 protected 
+			string
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_createCollectionClass">#</a>
+		<code class="wrap"><a href="source-class-Orm.ArrayMapper.html#272" title="Go to source code">createCollectionClass</a>( )</code>
+
+		<div class="short">
+			Vraci nazev tridy kterou tento mapper pouziva jako IEntityCollection
+		</div>
+
+		<div class="detailed hidden">
+			
+<p>Vraci nazev tridy kterou tento mapper pouziva jako IEntityCollection</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code>string</code><br />
+				</div>
+
+
+				<h4>See</h4>
+				<div class="smallList">
+						<code><code><a href="class-Orm.Mapper.html#_getCollectionClass">Orm\Mapper::getCollectionClass()</a></code></code> <br />
+				</div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="lock" id="_lock">
+
+		<td class="right min"><code class="nowrap">
+			
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_lock">#</a>
+		<code class="wrap"><a href="source-class-Orm.ArrayMapper.html#282" title="Go to source code">lock</a>( )</code>
+
+		<div class="short">
+			Enters the critical section, other threads are locked out.
+		</div>
+
+		<div class="detailed hidden">
+			
+<p>Enters the critical section, other threads are locked out.</p>
+
+
+
+
+
+
+				<h4>Author</h4>
+				<div class="smallList">
+						David Grudl<br />
+				</div>
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="unlock" id="_unlock">
+
+		<td class="right min"><code class="nowrap">
+			
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_unlock">#</a>
+		<code class="wrap"><a href="source-class-Orm.ArrayMapper.html#313" title="Go to source code">unlock</a>( )</code>
+
+		<div class="short">
+			Leaves the critical section, other threads can now enter it.
+		</div>
+
+		<div class="detailed hidden">
+			
+<p>Leaves the critical section, other threads can now enter it.</p>
+
+
+
+
+
+
+				<h4>Author</h4>
+				<div class="smallList">
+						David Grudl<br />
+				</div>
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+	<table class="summary methods">
+	<caption>Methods inherited from <a href="class-Orm.Mapper.html#methods">Orm\Mapper</a></caption>
+	<tr>
+		<td><code>
+<a href="class-Orm.Mapper.html#___call">__call()</a>, 
+<a href="class-Orm.Mapper.html#___construct">__construct()</a>, 
+<a href="class-Orm.Mapper.html#_createConventional">createConventional()</a>, 
+<a href="class-Orm.Mapper.html#_findBy">findBy()</a>, 
+<a href="class-Orm.Mapper.html#_getBy">getBy()</a>, 
+<a href="class-Orm.Mapper.html#_getCollectionClass">getCollectionClass()</a>, 
+<a href="class-Orm.Mapper.html#_getModel">getModel()</a>, 
+<a href="class-Orm.Mapper.html#_getRepository">getRepository()</a>
+		</code></td>
+	</tr>
+	</table>
+	<table class="summary methods">
+	<caption>Methods inherited from <a href="class-Orm.Object.html#methods">Orm\Object</a></caption>
+	<tr>
+		<td><code>
+<a href="class-Orm.Object.html#___callStatic">__callStatic()</a>, 
+<a href="class-Orm.Object.html#___get">__get()</a>, 
+<a href="class-Orm.Object.html#___isset">__isset()</a>, 
+<a href="class-Orm.Object.html#___set">__set()</a>, 
+<a href="class-Orm.Object.html#___unset">__unset()</a>
+		</code></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		Orm API documentation generated by <a href="http://apigen.org">ApiGen</a>.
+	</div>
+</div>
+</div>
+</body>
+</html>
