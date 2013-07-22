@@ -8,10 +8,10 @@
 
 
 // include libs
-require_once __DIR__ . '/../../src/texy.php';
+require_once dirname(__FILE__) . '/../../src/texy.php';
 
 
-$geshiPath = __DIR__.'/geshi/';
+$geshiPath = dirname(__FILE__).'/geshi/';
 @include_once $geshiPath . 'geshi.php';
 
 

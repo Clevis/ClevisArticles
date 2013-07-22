@@ -7,9 +7,9 @@
 
 
 // include libs
-require_once __DIR__ . '/../../src/texy.php';
+require_once dirname(__FILE__) . '/../../src/texy.php';
 
-$fshlPath = __DIR__.'/fshl/';
+$fshlPath = dirname(__FILE__).'/fshl/';
 @include_once $fshlPath . 'fshl.php';
 
 

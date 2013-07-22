@@ -6,7 +6,7 @@
  */
 
 
-require_once __DIR__.'/mytexy.php';
+require_once dirname(__FILE__).'/mytexy.php';
 
 
 $texy = new MyTexy();

@@ -10,13 +10,12 @@
  */
 
 
+define('TEXY_VERSION', '2.3');
+
+
 /**
  * Check PHP configuration.
  */
-if (version_compare(PHP_VERSION, '5.3.0') < 0) {
-	throw new Exception('Texy requires PHP 5.3.0 or newer.');
-}
-
 if (extension_loaded('mbstring')) {
 	if (mb_get_info('func_overload') & 2 && substr(mb_get_info('internal_encoding'), 0, 1) === 'U') { // U??
 		mb_internal_encoding('pass');
@@ -32,30 +31,61 @@ if (ini_get('zend.ze1_compatibility_mode') % 256 ||
 
 
 // Texy! libraries
-require_once __DIR__ . '/Texy/RegExp.Patterns.php';
-require_once __DIR__ . '/Texy/TexyObject.php';
-require_once __DIR__ . '/Texy/TexyHtml.php';
-require_once __DIR__ . '/Texy/TexyModifier.php';
-require_once __DIR__ . '/Texy/TexyModule.php';
-require_once __DIR__ . '/Texy/TexyParser.php';
-require_once __DIR__ . '/Texy/TexyConfigurator.php';
-require_once __DIR__ . '/Texy/TexyHandlerInvocation.php';
-require_once __DIR__ . '/Texy/TexyPcreException.php';
-require_once __DIR__ . '/Texy/Texy.php';
-require_once __DIR__ . '/Texy/modules/TexyParagraphModule.php';
-require_once __DIR__ . '/Texy/modules/TexyBlockModule.php';
-require_once __DIR__ . '/Texy/modules/TexyHeadingModule.php';
-require_once __DIR__ . '/Texy/modules/TexyHorizLineModule.php';
-require_once __DIR__ . '/Texy/modules/TexyHtmlModule.php';
-require_once __DIR__ . '/Texy/modules/TexyFigureModule.php';
-require_once __DIR__ . '/Texy/modules/TexyImageModule.php';
-require_once __DIR__ . '/Texy/modules/TexyLinkModule.php';
-require_once __DIR__ . '/Texy/modules/TexyListModule.php';
-require_once __DIR__ . '/Texy/modules/TexyLongWordsModule.php';
-require_once __DIR__ . '/Texy/modules/TexyPhraseModule.php';
-require_once __DIR__ . '/Texy/modules/TexyBlockQuoteModule.php';
-require_once __DIR__ . '/Texy/modules/TexyScriptModule.php';
-require_once __DIR__ . '/Texy/modules/TexyEmoticonModule.php';
-require_once __DIR__ . '/Texy/modules/TexyTableModule.php';
-require_once __DIR__ . '/Texy/modules/TexyTypographyModule.php';
-require_once __DIR__ . '/Texy/modules/TexyHtmlOutputModule.php';
+require_once dirname(__FILE__) . '/Texy/RegExp.Patterns.php';
+require_once dirname(__FILE__) . '/Texy/TexyObject.php';
+require_once dirname(__FILE__) . '/Texy/TexyHtml.php';
+require_once dirname(__FILE__) . '/Texy/TexyModifier.php';
+require_once dirname(__FILE__) . '/Texy/TexyModule.php';
+require_once dirname(__FILE__) . '/Texy/TexyParser.php';
+require_once dirname(__FILE__) . '/Texy/TexyUtf.php';
+require_once dirname(__FILE__) . '/Texy/TexyConfigurator.php';
+require_once dirname(__FILE__) . '/Texy/TexyHandlerInvocation.php';
+require_once dirname(__FILE__) . '/Texy/Texy.php';
+require_once dirname(__FILE__) . '/Texy/modules/TexyParagraphModule.php';
+require_once dirname(__FILE__) . '/Texy/modules/TexyBlockModule.php';
+require_once dirname(__FILE__) . '/Texy/modules/TexyHeadingModule.php';
+require_once dirname(__FILE__) . '/Texy/modules/TexyHorizLineModule.php';
+require_once dirname(__FILE__) . '/Texy/modules/TexyHtmlModule.php';
+require_once dirname(__FILE__) . '/Texy/modules/TexyFigureModule.php';
+require_once dirname(__FILE__) . '/Texy/modules/TexyImageModule.php';
+require_once dirname(__FILE__) . '/Texy/modules/TexyLinkModule.php';
+require_once dirname(__FILE__) . '/Texy/modules/TexyListModule.php';
+require_once dirname(__FILE__) . '/Texy/modules/TexyLongWordsModule.php';
+require_once dirname(__FILE__) . '/Texy/modules/TexyPhraseModule.php';
+require_once dirname(__FILE__) . '/Texy/modules/TexyBlockQuoteModule.php';
+require_once dirname(__FILE__) . '/Texy/modules/TexyScriptModule.php';
+require_once dirname(__FILE__) . '/Texy/modules/TexyEmoticonModule.php';
+require_once dirname(__FILE__) . '/Texy/modules/TexyTableModule.php';
+require_once dirname(__FILE__) . '/Texy/modules/TexyTypographyModule.php';
+require_once dirname(__FILE__) . '/Texy/modules/TexyHtmlOutputModule.php';
+
+
+/**
+ * Compatibility with PHP < 5.1.
+ */
+if (!class_exists('LogicException', FALSE)) {
+	class LogicException extends Exception {}
+}
+
+if (!class_exists('InvalidArgumentException', FALSE)) {
+	class InvalidArgumentException extends LogicException {}
+}
+
+if (!class_exists('RuntimeException', FALSE)) {
+	class RuntimeException extends Exception {}
+}
+
+if (!class_exists('UnexpectedValueException', FALSE)) {
+	class UnexpectedValueException extends RuntimeException {}
+}
+
+
+/**
+ * For Texy 1 backward compatibility.
+ */
+define('TEXY_ALL', TRUE);
+define('TEXY_NONE', FALSE);
+define('TEXY_CONTENT_MARKUP', "\x17");
+define('TEXY_CONTENT_REPLACED', "\x16");
+define('TEXY_CONTENT_TEXTUAL', "\x15");
+define('TEXY_CONTENT_BLOCK', "\x14");

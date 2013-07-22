@@ -6,6 +6,8 @@
   <li class="active">Správa článků</li>
 </ul>
 
-{control grid}
+{foreach $articles as $article}
+	{$article->title}
+{/foreach}
 
 {/block}

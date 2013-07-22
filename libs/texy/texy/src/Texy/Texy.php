@@ -28,7 +28,7 @@ class Texy extends TexyObject
 	const NONE = FALSE;
 
 	// Texy version
-	const VERSION = '3.0-dev';
+	const VERSION = TEXY_VERSION;
 	const REVISION = '$WCREV$ released on $WCDATE$';
 
 	// types of protection marks
@@ -51,6 +51,9 @@ class Texy extends TexyObject
 	const XHTML1_TRANSITIONAL = 2; // Texy::HTML4_TRANSITIONAL | Texy::XML;
 	const XHTML1_STRICT = 3; // Texy::HTML4_STRICT | Texy::XML;
 	const XHTML5 = 6; // Texy::HTML5 | Texy::XML;
+
+	/** @var string  input & output text encoding */
+	public $encoding = 'utf-8';
 
 	/** @var array  Texy! syntax configuration */
 	public $allowed = array();
@@ -80,6 +83,7 @@ class Texy extends TexyObject
 	public $summary = array(
 		'images' => array(),
 		'links' => array(),
+		'preload' => array(),
 	);
 
 	/** @var string  Generated stylesheet */
@@ -256,7 +260,7 @@ class Texy extends TexyObject
 		}
 
 		if (!isset(self::$dtdCache[$mode])) {
-			require __DIR__ . '/DTD.php';
+			require dirname(__FILE__) . '/DTD.php';
 			self::$dtdCache[$mode] = $dtd;
 		}
 
@@ -395,6 +399,9 @@ class Texy extends TexyObject
 			$this->_styles = $this->allowedStyles;
 		}
 
+		// convert to UTF-8 (and check source encoding)
+		$text = TexyUtf::toUtf($text, $this->encoding);
+
 		if ($this->removeSoftHyphens) {
 			$text = str_replace("\xC2\xAD", '', $text);
 		}
@@ -406,9 +413,6 @@ class Texy extends TexyObject
 		$this->tabWidth = max(1, (int) $this->tabWidth);
 		while (strpos($text, "\t") !== FALSE) {
 			$text = preg_replace_callback('#^([^\t\n]*+)\t#mU', array($this, 'tabCb'), $text);
-			if (preg_last_error()) {
-				throw new TexyPcreException;
-			}
 		}
 
 		// user before handler
@@ -442,6 +446,9 @@ class Texy extends TexyObject
 		// converts internal DOM structure to final HTML code
 		$html = $this->DOM->toHtml($this);
 
+		// created by TexyParagraphModule and then protected
+		$html = str_replace("\r", "\n", $html);
+
 		// this notice should remain
 		if (self::$advertisingNotice) {
 			$html .= "\n<!-- by Texy2! -->";
@@ -451,7 +458,8 @@ class Texy extends TexyObject
 		}
 
 		$this->processing = FALSE;
-		return $html;
+
+		return TexyUtf::utf2html($html, $this->encoding);
 	}
 
 
@@ -469,11 +477,14 @@ class Texy extends TexyObject
 
 	/**
 	 * Makes only typographic corrections.
-	 * @param  string   input text
-	 * @return string   output text
+	 * @param  string   input text (in encoding defined by Texy::$encoding)
+	 * @return string   output text (in UTF-8)
 	 */
 	public function processTypo($text)
 	{
+		// convert to UTF-8 (and check source encoding)
+		$text = TexyUtf::toUtf($text, $this->encoding);
+
 		// standardize line endings and spaces
 		$text = self::normalize($text);
 
@@ -484,7 +495,7 @@ class Texy extends TexyObject
 			$text = $this->longWordsModule->postLine($text);
 		}
 
-		return $text;
+		return TexyUtf::utf2html($text, $this->encoding);
 	}
 
 
@@ -498,12 +509,12 @@ class Texy extends TexyObject
 			throw new RuntimeException('Call $texy->process() first.');
 		}
 
-		return $this->DOM->toText($this);
+		return TexyUtf::utfTo($this->DOM->toText($this), $this->encoding);
 	}
 
 
 	/**
-	 * Converts internal string representation to final HTML code.
+	 * Converts internal string representation to final HTML code in UTF-8.
 	 * @return string
 	 */
 	final public function stringToHtml($s)
@@ -542,7 +553,7 @@ class Texy extends TexyObject
 
 
 	/**
-	 * Converts internal string representation to final HTML code.
+	 * Converts internal string representation to final HTML code in UTF-8.
 	 * @return string
 	 */
 	final public function stringToText($s)
@@ -554,9 +565,6 @@ class Texy extends TexyObject
 
 		// remove tags
 		$s = preg_replace('#<(script|style)(.*)</\\1>#Uis', '', $s);
-		if (preg_last_error()) {
-			throw new TexyPcreException;
-		}
 		$s = strip_tags($s);
 		$s = preg_replace('#\n\s*\n\s*\n[\n\s]*\n#', "\n\n", $s);
 
@@ -686,16 +694,7 @@ class Texy extends TexyObject
 	 */
 	final public static function webalize($s, $charlist = NULL)
 	{
-		$s = strtr($s, '`\'"^~', '-----');
-		if (ICONV_IMPL === 'glibc') {
-			$s = @iconv('UTF-8', 'WINDOWS-1250//TRANSLIT', $s); // intentionally @
-			$s = strtr($s, "\xa5\xa3\xbc\x8c\xa7\x8a\xaa\x8d\x8f\x8e\xaf\xb9\xb3\xbe\x9c\x9a\xba\x9d\x9f\x9e\xbf\xc0\xc1\xc2\xc3\xc4\xc5\xc6\xc7\xc8\xc9\xca\xcb\xcc\xcd\xce\xcf\xd0\xd1\xd2"
-				."\xd3\xd4\xd5\xd6\xd7\xd8\xd9\xda\xdb\xdc\xdd\xde\xdf\xe0\xe1\xe2\xe3\xe4\xe5\xe6\xe7\xe8\xe9\xea\xeb\xec\xed\xee\xef\xf0\xf1\xf2\xf3\xf4\xf5\xf6\xf8\xf9\xfa\xfb\xfc\xfd\xfe",
-				"ALLSSSSTZZZallssstzzzRAAAALCCCEEEEIIDDNNOOOOxRUUUUYTsraaaalccceeeeiiddnnooooruuuuyt");
-		} else {
-			$s = @iconv('UTF-8', 'ASCII//TRANSLIT', $s); // intentionally @
-		}
-		$s = str_replace(array('`', "'", '"', '^', '~'), '', $s);
+		$s = TexyUtf::utf2ascii($s);
 		$s = strtolower($s);
 		$s = preg_replace('#[^a-z0-9'.preg_quote($charlist, '#').']+#', '-', $s);
 		$s = trim($s, '-');
@@ -716,7 +715,7 @@ class Texy extends TexyObject
 
 
 	/**
-	 * Texy! version of html_entity_decode.
+	 * Texy! version of html_entity_decode (always UTF-8, much faster than original!).
 	 * @param  string
 	 * @return string
 	 */

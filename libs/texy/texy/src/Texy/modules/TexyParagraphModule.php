@@ -60,9 +60,6 @@ final class TexyParagraphModule extends TexyModule
 				}
 				$mod = new TexyModifier;
 				$mod->setProperties($mMod);
-
-			} elseif (preg_last_error()) {
-				throw new TexyPcreException;
 			}
 
 			$res = $tx->invokeAroundHandlers('paragraph', $parser, array($s, $mod));

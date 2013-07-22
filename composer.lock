@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "fe25879132c7ec566b04f9f4403a85d4",
+    "hash": "f66725f4585d83550a2b79465a075ac9",
     "packages": [
         {
             "name": "clevis/migration",
@@ -11,12 +11,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Clevis/Migration.git",
-                "reference": "f4509027927bda3f9d39964f3614a56bd45b40b9"
+                "reference": "3e30e72e280bf71c6ec7bc22aea2c8bba555db5d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Clevis/Migration/zipball/f4509027927bda3f9d39964f3614a56bd45b40b9",
-                "reference": "f4509027927bda3f9d39964f3614a56bd45b40b9",
+                "url": "https://api.github.com/repos/Clevis/Migration/zipball/3e30e72e280bf71c6ec7bc22aea2c8bba555db5d",
+                "reference": "3e30e72e280bf71c6ec7bc22aea2c8bba555db5d",
                 "shasum": ""
             },
             "require": {
@@ -33,7 +33,7 @@
                 "source": "https://github.com/Clevis/Migration/tree/master",
                 "issues": "https://github.com/Clevis/Migration/issues"
             },
-            "time": "2013-06-26 16:49:22"
+            "time": "2013-07-19 16:56:17"
         },
         {
             "name": "dg/dibi",
@@ -92,12 +92,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/nette.git",
-                "reference": "9bf0292c120122c040ac7cd207d2b1f47b5f5062"
+                "reference": "ada93426cef59644af6d1fe55e4254bddca2f2dd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/nette/zipball/9bf0292c120122c040ac7cd207d2b1f47b5f5062",
-                "reference": "9bf0292c120122c040ac7cd207d2b1f47b5f5062",
+                "url": "https://api.github.com/repos/nette/nette/zipball/ada93426cef59644af6d1fe55e4254bddca2f2dd",
+                "reference": "ada93426cef59644af6d1fe55e4254bddca2f2dd",
                 "shasum": ""
             },
             "require": {
@@ -158,7 +158,7 @@
                 "neon",
                 "templating"
             ],
-            "time": "2013-07-18 22:27:44"
+            "time": "2013-07-22 02:29:10"
         },
         {
             "name": "petrp/orm",
@@ -182,19 +182,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dg/texy.git",
-                "reference": "439e0d561eb34de45b0303754dd6789bf2576785"
+                "reference": "d2dbd6427853b39c7c7c7e457c9713dd932d609d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dg/texy/zipball/439e0d561eb34de45b0303754dd6789bf2576785",
-                "reference": "439e0d561eb34de45b0303754dd6789bf2576785",
+                "url": "https://api.github.com/repos/dg/texy/zipball/d2dbd6427853b39c7c7c7e457c9713dd932d609d",
+                "reference": "d2dbd6427853b39c7c7c7e457c9713dd932d609d",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.0.0"
             },
             "require-dev": {
-                "nette/tester": "@dev"
+                "nette/tester": "0.9.*"
             },
             "type": "library",
             "autoload": {
@@ -227,61 +227,7 @@
                 "wiki",
                 "xhtml"
             ],
-            "time": "2013-07-15 12:20:09"
-        },
-        {
-            "name": "tsusanka/grido",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/tsusanka/grido.git",
-                "reference": "35f7df86fd87811b82f24e92a929d30ea38cfb07"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/tsusanka/grido/zipball/35f7df86fd87811b82f24e92a929d30ea38cfb07",
-                "reference": "35f7df86fd87811b82f24e92a929d30ea38cfb07",
-                "shasum": ""
-            },
-            "require": {
-                "nette/nette": "2.*",
-                "php": ">=5.3.1"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Grido": ""
-                }
-            },
-            "license": [
-                "BSD-3",
-                "GPL-2.0",
-                "GPL-3.0"
-            ],
-            "authors": [
-                {
-                    "name": "Petr Bugyík",
-                    "homepage": "http://petr.bugyik.cz/",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Grido - DataGrid for Nette Framework",
-            "homepage": "http://o5.github.io/grido-sandbox/",
-            "keywords": [
-                "datagrid",
-                "datalist",
-                "grid",
-                "list",
-                "nette",
-                "table",
-                "tablegrid"
-            ],
-            "support": {
-                "issues": "https://github.com/o5/grido/issues/",
-                "forum": "http://forum.nette.org/cs/13109-grido-datagrid-pro-nette/",
-                "source": "https://github.com/tsusanka/grido/tree/master"
-            },
-            "time": "2013-07-06 12:35:26"
+            "time": "2013-07-18 01:19:38"
         }
     ],
     "packages-dev": [
@@ -843,12 +789,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit-selenium.git",
-                "reference": "5d9ffa18eb410aeba8816fd3201514e58a263d17"
+                "reference": "69dd61d179a4f7b43128bd0afbd108d7b635f710"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-selenium/zipball/5d9ffa18eb410aeba8816fd3201514e58a263d17",
-                "reference": "5d9ffa18eb410aeba8816fd3201514e58a263d17",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-selenium/zipball/69dd61d179a4f7b43128bd0afbd108d7b635f710",
+                "reference": "69dd61d179a4f7b43128bd0afbd108d7b635f710",
                 "shasum": ""
             },
             "require": {
@@ -889,7 +835,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2013-07-07 16:28:43"
+            "time": "2013-07-21 17:27:54"
         },
         {
             "name": "sebastian/diff",
@@ -1046,12 +992,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Yaml.git",
-                "reference": "7a6c10b37cb4335dcca038da760f29915a374b81"
+                "reference": "4d80b4f4c447e8ad7cab8b3afb0b51aad0431f7f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Yaml/zipball/7a6c10b37cb4335dcca038da760f29915a374b81",
-                "reference": "7a6c10b37cb4335dcca038da760f29915a374b81",
+                "url": "https://api.github.com/repos/symfony/Yaml/zipball/4d80b4f4c447e8ad7cab8b3afb0b51aad0431f7f",
+                "reference": "4d80b4f4c447e8ad7cab8b3afb0b51aad0431f7f",
                 "shasum": ""
             },
             "require": {
@@ -1084,7 +1030,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "http://symfony.com",
-            "time": "2013-07-11 19:37:15"
+            "time": "2013-07-21 20:19:01"
         }
     ],
     "aliases": [
@@ -1093,7 +1039,6 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "nette/nette": 20,
-        "tsusanka/grido": 20,
         "petrp/httpphpunit": 20,
         "mockery/mockery": 20,
         "petrp/access": 20

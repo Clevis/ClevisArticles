@@ -58,9 +58,6 @@ final class TexyBlockModule extends TexyModule
 			"\$1\$2\n\\--",
 			$text
 		);
-		if (preg_last_error()) {
-			throw new TexyPcreException;
-		}
 	}
 
 
@@ -90,6 +87,14 @@ final class TexyBlockModule extends TexyModule
 		$param = empty($parts[1]) ? NULL : $parts[1];
 
 		return $this->texy->invokeAroundHandlers('block', $parser, array($blocktype, $mContent, $param, $mod));
+	}
+
+
+	// for backward compatibility
+	function outdent($s)
+	{
+		trigger_error('Use Texy::outdent()', E_USER_WARNING);
+		return Texy::outdent($s);
 	}
 
 

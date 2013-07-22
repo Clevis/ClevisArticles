@@ -10,6 +10,11 @@
  */
 
 
+// for Texy 1 backward compatibility
+define('TEXY_HEADING_DYNAMIC', 1);
+define('TEXY_HEADING_FIXED', 2);
+
+
 /**
  * Heading module.
  *

@@ -23,7 +23,6 @@
 		"nette/nette": "@dev",
 		"dg/dibi": "2.1.*",
 		"texy/texy": "master",
-		"tsusanka/grido": "dev-master",
 		"dg/dibi": "2.1.*",
 		"petrp/orm": "v0.4",
 		"clevis/migration": "*"
@@ -87,10 +86,6 @@
 		{
 			"type": "vcs",
 			"url": "https://github.com/Clevis/Se34.git"
-		},
-		{
-			"type": "vcs",
-			"url": "https://github.com/tsusanka/grido.git"
 		}
 	]
 }

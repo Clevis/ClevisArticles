@@ -2,9 +2,7 @@
 
 namespace App\Admin;
 
-use Grido,
-	Grido\Components\Columns\Column,
-	Nette\Application\UI\Form,
+use Nette\Application\UI\Form,
 	App\Article,
 	Nette\Utils\Html;
 
@@ -15,36 +13,9 @@ use Grido,
 final class ArticlesPresenter extends BasePresenter
 {
 
-
-	/**
-	 * Datagrid for articles
-	 * @param
-	 */
-	protected function createComponentGrid($name)
+	public function renderDefault()
 	{
-		$grid = new Grido\Grid($this, $name);
-
-		$grid->setTemplateFile(__DIR__ . '/../templates/components/grid.latte');
-
-		$grid->addColumnText('title', 'Titulek');
-		$grid->addColumnText('created_at', 'Vytvořeno');
-		$grid->addColumnText('visible', 'Viditelné')
-			->setCustomRender(function ($article) {
-				$el = Html::el('i');
-				$el->class = $article->visible ? 'glyphicon glyphicon-ok' : 'glyphicon glyphicon-remove';
-				return $el;
-			});
-
-		$grid->addActionHref('edit', 'Editovat')
-			->setIcon('pencil');
-
-		$grid->addActionHref('delete', 'Smazat')
-			->setIcon('trash')
-			->setConfirm(function($item) {
-				return 'Opravdu chcete smazat ' . $item->title . ' ?';
-			});
-
-		$grid->setModel($this->orm->articles->findAllForDatagrid());
+		$this->template->articles = $this->orm->articles->findAll();
 	}
 
 	/**

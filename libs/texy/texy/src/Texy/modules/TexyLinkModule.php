@@ -92,9 +92,6 @@ final class TexyLinkModule extends TexyModule
 				array($this, 'patternReferenceDef'),
 				$text
 			);
-			if (preg_last_error()) {
-				throw new TexyPcreException;
-			}
 		}
 	}
 
@@ -199,7 +196,7 @@ final class TexyLinkModule extends TexyModule
 	 */
 	public function addReference($name, TexyLink $link)
 	{
-		$link->name = function_exists('mb_strtolower') ? mb_strtolower($name, 'UTF-8') : $name;
+		$link->name = TexyUtf::strtolower($name);
 		$this->references[$link->name] = $link;
 	}
 
@@ -212,7 +209,7 @@ final class TexyLinkModule extends TexyModule
 	 */
 	public function getReference($name)
 	{
-		$name = function_exists('mb_strtolower') ? mb_strtolower($name, 'UTF-8') : $name;
+		$name = TexyUtf::strtolower($name);
 		if (isset($this->references[$name])) {
 			return clone $this->references[$name];
 
