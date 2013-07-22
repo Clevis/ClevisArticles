@@ -1,4 +1,31 @@
 {#content}
-<h1 n:block=title>Sign in</h1>
 
-{control signInForm}
+<div class="panel col-lg-4 col-offset-4">
+	<div class="panel-heading">Přihlášení</div>
+
+	{form signInForm, class => 'form-horizontal'}
+		<div n:foreach="$form->errors as $error" class="alert alert-danger">
+			<button type="button" class="close" data-dismiss="alert">&times;</button>
+			{$error}
+		</div>
+
+		<div class="row"><div class="col-12">{label username, class=>'accessible' /}{input username}</div></div>
+		<div class="row"><div class="col-12">{label password, class=>'accessible' /}{input password}</div></div>
+		<div class="row"><div class="col-12">
+			<div class="checkbox">
+				<label>
+					{input remember}
+					Trvalé přihlášení
+				</label>
+			</div>
+		</div></div>
+
+		<div class="panel-footer">
+			{input send, class=> 'btn btn-default'}
+			<a n:href="lostPassword" class="btn btn-link">Obnovit heslo</a>
+		</div>
+	{/form}
+</div>
+
+
+

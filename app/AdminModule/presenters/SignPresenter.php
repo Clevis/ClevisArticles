@@ -21,17 +21,19 @@ class SignPresenter extends BasePresenter
 	{
 		$form = new Nette\Application\UI\Form;
 
-		$form->addText('username', 'Username:')
-			->setRequired('Please enter your username.');
+		$form->addText('username', 'Uživatelské jméno')
+			->setRequired('Prosím zadejte vaše uživatelské jméno.')
+			->setAttribute('placeholder', 'Uživatelské jméno');
 
-		$form->addPassword('password', 'Password:')
-			->setRequired('Please enter your password.');
+		$form->addPassword('password', 'Heslo')
+			->setRequired('Prosím zadejte vaše heslo.')
+			->setAttribute('placeholder', 'Heslo');
 
-		$form->addCheckbox('remember', 'Keep me signed in');
+		$form->addCheckbox('remember', 'Zapamatovat si přihlášení');
 
 		$form->addProtection();
 
-		$form->addSubmit('send', 'Sign in');
+		$form->addSubmit('send', 'Přihlásit se');
 
 		$form->onSuccess[] = $this->signInFormSucceeded;
 
@@ -64,11 +66,41 @@ class SignPresenter extends BasePresenter
 		}
 	}
 
+	/**
+	 * Sign-in form factory.
+	 *
+	 * @return Nette\Application\UI\Form
+	 */
+	protected function createComponentLostPasswordForm()
+	{
+		$form = new Nette\Application\UI\Form;
+		$form->addText('email', 'Registrovaný e-mail')
+			->setType('email')
+			->addRule(Nette\Application\UI\Form::EMAIL)
+			->setRequired('Prosím zadejte váš registrovaný e-mail.')
+			->setAttribute('placeholder', 'Registrovaný e-mail');
+
+		$form->addProtection();
+
+		$form->addSubmit('send', 'Obnovit heslo');
+
+		$form->onSuccess[] = $this->lostPasswordFormSucceeded;
+
+		return $form;
+	}
+
+	public function lostPasswordFormSucceeded($form)
+	{
+		$values = $form->getValues();
+
+		// @TODO
+	}
+
 
 	public function actionOut()
 	{
 		$this->getUser()->logout();
-		$this->flashMessage('You have been signed out.');
+		$this->flashMessage('Byl jste odhlášen z aplikace.');
 		$this->redirect('in');
 	}
 
