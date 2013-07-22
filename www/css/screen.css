@@ -38,3 +38,23 @@ html, body {
 	display: none;
 	visibility: hidden;
 }
+
+/* Boostrap overrides */
+.btn-mini{
+	border-radius: 3px 3px 3px 3px;
+	font-size: 10px;
+	line-height: 1.5;
+	padding: 5px 10px;
+}
+
+
+/* Data grid table */
+.table-datagrid{}
+
+.table-datagrid tbody td{
+	vertical-align: middle !important;
+}
+.table-datagrid .actions{
+	text-align: right;
+
+}

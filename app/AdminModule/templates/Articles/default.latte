@@ -1,4 +1,4 @@
-{block #content}
+{#content}
 
 <a n:href="add" class="btn btn-primary btn-small pull-right"><i class="glyphicon glyphicon-plus"></i>&nbsp;Nový článek</a>
 
@@ -6,8 +6,24 @@
   <li class="active">Správa článků</li>
 </ul>
 
-{foreach $articles as $article}
-	{$article->title}
-{/foreach}
-
-{/block}
+<table class="table table-hover table-datagrid">
+	<thead>
+		<tr>
+			<th class="title">Název</th>
+			<th class="date">Datum</th>
+			<th class="properties">Vlastnosti</th>
+			<th class="actions">Akce</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr n:foreach="$articles as $article">
+			<td class="title"><a n:href="edit $article->id">{$article->title}</a></td>
+			<td class="date">{$article->createdAt}</td>
+			<td class="properties"><span class="glyphicon glyphicon-eye-{$article->visible ? 'open' : 'close'}" title="{$article->visible ? 'Článek je viditelný' : 'Článek je soukromý'}"></span></td>
+			<td class="actions">
+				<a class="btn btn-mini btn-default" n:href=":Front:Articles:view $article->id" title="Trvalý odkaz na článek"><span class="glyphicon glyphicon-link"></span></a>
+				<a class="btn btn-mini btn-danger" n:href="delete $article->id" onclick="return confirm('Opravdu chcete článek odstranit?');" title="Odstranit článek"><span class="glyphicon glyphicon-remove"></span></a>
+			</td>
+		</tr>
+	</tbody>
+</table>
