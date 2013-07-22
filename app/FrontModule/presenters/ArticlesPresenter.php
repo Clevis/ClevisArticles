@@ -11,11 +11,11 @@ final class ArticlesPresenter extends BasePresenter
 {
 
 	/**
-	 * All articles list
+	 * Hands over all visible articles to template
 	 */
 	public function renderDefault()
 	{
-		$this->template->articles = $this->orm->articles->findAll();
+		$this->template->articles = $this->orm->articles->findVisible();
 	}
 
 	/**

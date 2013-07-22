@@ -19,4 +19,14 @@ class ArticlesMapper extends Mapper
 		return parent::fluentFindAll();
 	}
 
+	/**
+	 * Returns all visible articles
+	 *
+	 * @return IEntityCollection|Articles[]
+	 */
+	public function findVisible()
+	{
+		return $this->findAll()->where('[visible] = ', TRUE);
+	}
+
 }
