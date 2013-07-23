@@ -11,6 +11,22 @@ use App;
 abstract class BasePresenter extends App\BasePresenter
 {
 
+	/** @var User|NULL aktuálně přihlášený uživatel */
+	protected $userEntity;
+
+	/**
+	 * Reads User and stores it in userEntity
+	 */
+	public function startup()
+	{
+		parent::startup();
+
+		if ($this->user->isLoggedIn())
+		{
+			$this->userEntity = $this->orm->users->getById($this->user->id);
+		}
+	}
+
 	public function beforeRender()
 	{
 		parent::beforeRender();
