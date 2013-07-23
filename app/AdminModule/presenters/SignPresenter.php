@@ -66,37 +66,6 @@ class SignPresenter extends BasePresenter
 		}
 	}
 
-	/**
-	 * Sign-in form factory.
-	 *
-	 * @return Nette\Application\UI\Form
-	 */
-	protected function createComponentLostPasswordForm()
-	{
-		$form = new Nette\Application\UI\Form;
-		$form->addText('email', 'Registrovaný e-mail')
-			->setType('email')
-			->addRule(Nette\Application\UI\Form::EMAIL)
-			->setRequired('Prosím zadejte váš registrovaný e-mail.')
-			->setAttribute('placeholder', 'Registrovaný e-mail');
-
-		$form->addProtection();
-
-		$form->addSubmit('send', 'Obnovit heslo');
-
-		$form->onSuccess[] = $this->lostPasswordFormSucceeded;
-
-		return $form;
-	}
-
-	public function lostPasswordFormSucceeded($form)
-	{
-		$values = $form->getValues();
-
-		// @TODO
-	}
-
-
 	public function actionOut()
 	{
 		$this->getUser()->logout();

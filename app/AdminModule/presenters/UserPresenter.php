@@ -23,27 +23,12 @@ final class UserPresenter extends BasePresenter
 	}
 
 	/**
-	 * Change user password page
-	 *
-	 */
-	public function renderChangePassword($fromMail = FALSE)
-	{
-		$this->template->fromMail = $fromMail;
-	}
-
-	/**
 	 * Creates a component to change user's password.
 	 *
 	 */
 	public function createComponentChangePasswordForm()
 	{
 		$form = new Form();
-
-		// if (!$fromMail)
-		// {
-		// 	$form->addPassword('oldPass', 'Původní heslo')
-		// 		->addRule(Form::FILLED, 'Jaké bylo vaše původní heslo?');
-		// }
 
 		$form->addPassword('oldPass', 'Původní heslo')
 			->addRule(Form::FILLED, 'Jaké bylo vaše původní heslo?');
