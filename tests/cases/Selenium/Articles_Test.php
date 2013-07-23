@@ -46,4 +46,29 @@ class Articles_Test extends SeleniumTestCase
 		$this->assertSame($article->title->text(), 'Hrušky jsou rekordně levné');
 	}
 
+	/**
+	 * Testuje vymazání článku.
+	 * Využívá Authentication feature.
+	 *
+	 * @author Tomas Susanka
+	 */
+	public function testDeleteArticle()
+	{
+		$result = $this->auth->login(
+			$this->context->parameters['selenium']['testUser']['username'],
+			$this->context->parameters['selenium']['testUser']['password']
+		);
+		$this->assertTrue($result);
+
+		$articles = new Pages\Admin\Articles($this->session);
+
+		$this->assertSame($articles->getDatagridCell(1, 1)->text(), 'Jak zlepšit život v důchodu a stáří');
+
+		$articles->clickArticleDeleteButton(1);
+
+		$this->assertFlashMessage('Článek byl úspěšně smazán.');
+
+		$this->assertSame($articles->getDatagridCell(1, 1)->text(), 'Dechová zkouška není důkazem');
+	}
+
 }

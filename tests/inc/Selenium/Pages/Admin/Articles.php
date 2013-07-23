@@ -44,4 +44,18 @@ class Articles extends PageObject
 		return $this->getNextPage();
 	}
 
+	/**
+	 * @return \Tests\Selenium\Pages\Admin\Articles
+	 */
+	public function clickArticleDeleteButton($number)
+	{
+		$this->getDatagridCell($number, 4)->element($this->session->using('xpath')->value("a[2]"))->click();
+
+		$this->session->waitForAlert();
+		$this->session->acceptAlert();
+		$this->session->waitForDocument();
+
+		return $this->getNextPage();
+	}
+
 }
