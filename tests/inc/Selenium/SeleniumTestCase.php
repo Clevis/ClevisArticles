@@ -79,4 +79,24 @@ abstract class SeleniumTestCase extends TestCase
 		}
 	}
 
+	/**
+	 * Kontroluje, zda-li je přítomná flash message.
+	 */
+	public function assertFlashMessage($expected)
+	{
+		$flashMessage = $this->session->byXpath("//div[contains(concat(' ', normalize-space(@class), ' '), ' alert ')]");
+
+		if (is_array($flashMessage))
+		{
+			$msg = $flashMessage[0]->text();
+		}
+		else if (!empty($flashMessage))
+		{
+			$msg = $flashMessage->text();
+		}
+
+		$result = (strpos($msg, $expected) !== FALSE);
+
+		$this->assertTrue($result);
+	}
 }
