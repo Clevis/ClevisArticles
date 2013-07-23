@@ -27,7 +27,6 @@ class SignIn extends PageObject
 	public function clickSubmit()
 	{
 		$this->submit->click();
-		$this->session->waitForAjax();
 		$this->session->waitForDocument();
 
 		return $this->getNextPage();

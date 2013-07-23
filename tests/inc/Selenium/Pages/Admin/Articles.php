@@ -11,6 +11,12 @@ use Se34\Element;
  *
  * @property-read Element[] $datagridRows xpath="//table[@id='articles-datagrid']//tbody//tr"
  *
+ * @property-read Element $passwordChange link text='Změna hesla'
+ * @method UserChangePassword clickPasswordChange()
+ *
+ * @property-read Element $logout link text='Odhlásit se', a
+ * @method SignIn clickLogout()
+ *
  * @author Tomáš Sušánka
  */
 class Articles extends PageObject
