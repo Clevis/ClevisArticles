@@ -39,13 +39,13 @@ class Authentication extends Object
 			'username' => $username,
 			'password' => $password
 		);
-		$loginPage = new Pages\SignIn($this->session);
+		$loginPage = new Pages\Admin\SignIn($this->session);
 
 		$nextPage = $loginPage
 			->navigate()
 			->fill($credentials)
 			->clickSubmit();
 
-		return !($nextPage instanceof Pages\SignIn);
+		return !($nextPage instanceof Pages\Admin\SignIn);
 	}
 }

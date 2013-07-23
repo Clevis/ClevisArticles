@@ -28,7 +28,6 @@ class SignIn_Test extends SeleniumTestCase
 			$this->context->parameters['selenium']['testUser']['username'],
 			$this->context->parameters['selenium']['testUser']['password']
 		);
-		$this->assertTrue($result);
 	}
 
 }

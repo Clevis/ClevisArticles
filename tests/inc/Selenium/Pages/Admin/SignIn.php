@@ -1,9 +1,9 @@
 <?php
 
-namespace Tests\Selenium\Pages;
+namespace Tests\Selenium\Pages\Admin;
 
-use Se34\PageObject;
-use Se34\Element;
+use Se34\PageObject,
+	Se34\Element;
 
 
 /**
@@ -18,11 +18,11 @@ use Se34\Element;
 class SignIn extends PageObject
 {
 
-	protected $presenterName = 'Sign';
-	protected $parameters = 'action=in';
+	protected $presenterName = 'Admin:Sign';
+	protected $presenterParameters = 'action = in';
 
 	/**
-	 * @return SignIn|Homepage
+	 * @return SignIn|Articles
 	 */
 	public function clickSubmit()
 	{
