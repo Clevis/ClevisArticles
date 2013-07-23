@@ -11,6 +11,7 @@ use Se34\Element;
  *
  *
  * @property-read Element $title xpath="//h2"
+ * @property-read Element $italic xpath="//em"
  *
  * @author Tomáš Sušánka
  */

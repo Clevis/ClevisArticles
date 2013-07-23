@@ -71,4 +71,39 @@ class Articles_Test extends SeleniumTestCase
 		$this->assertSame($articles->getDatagridCell(1, 1)->text(), 'Dechová zkouška není důkazem');
 	}
 
+	/**
+	 * Testuje editaci článk.
+	 * Využívá Authentication feature.
+	 *
+	 * @author Tomas Susanka
+	 */
+	public function testTexy()
+	{
+		$result = $this->auth->login(
+			$this->context->parameters['selenium']['testUser']['username'],
+			$this->context->parameters['selenium']['testUser']['password']
+		);
+		$this->assertTrue($result);
+
+		$articles = new Pages\Admin\Articles($this->session);
+		$articleEdit = $articles->editArticle(1);
+
+		$articleEdit->clear();
+
+		$articleEdit->fill(array(
+				'title' => 'A',
+				'intro' => 'a',
+				'text' => '//italic test//',
+			));
+
+		$articleEdit->clickSaveButton();
+
+		$this->assertFlashMessage('Článek byl úspěšně uložen.');
+
+		$articles = $articleEdit->clickBackToArticles();
+		$article = $articles->clickArticleAnchor(1);
+
+		$this->assertSame($article->italic->text(), 'italic test');
+	}
+
 }
